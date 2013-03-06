@@ -1,0 +1,165 @@
+/*------------------------------- */
+/*            RESETS             */
+/*------------------------------- */
+* {
+  box-sizing: border-box; }
+
+ul {
+  list-style: none;
+  padding: 0;
+  marging: 0; }
+
+/*------------------------------- */
+/*            COLORS             */
+/*------------------------------- */
+/*------------------------------- */
+/*             TYPE              */
+/*------------------------------- */
+@font-face {
+  font-family: "caecilia";
+  src: url("/fonts/caecilia_light/caecilialtstdlight.eot");
+  src: url("/fonts/caecilia_light/caecilialtstdlight.eot?#iefix") format("embedded-opentype"), url("/fonts/caecilia_light/caecilialtstdlight.woff") format("woff"), url("/fonts/caecilia_light/caecilialtstdlight.ttf") format("truetype"), url("/fonts/caecilia_light/caecilialtstdlight.svg#museo_300regular") format("svg");
+  font-weight: light;
+  font-style: normal; }
+
+@font-face {
+  font-family: "caecilia";
+  src: url("/fonts/caecilia_lightitalic/caecilialtstdlightitalic.eot");
+  src: url("/fonts/caecilia_lightitalic/caecilialtstdlightitalic.eot?#iefix") format("embedded-opentype"), url("/fonts/caecilia_lightitalic/caecilialtstdlightitalic.woff") format("woff"), url("/fonts/caecilia_lightitalic/caecilialtstdlightitalic.ttf") format("truetype"), url("/fonts/caecilia_lightitalic/caecilialtstdlightitalic.svg#museo_300regular") format("svg");
+  font-weight: light;
+  font-style: italic; }
+
+* {
+  font-family: caecilia;
+  font-weight: normal; }
+
+h1 {
+  color: #88af33;
+  font-size: 20pt;
+  margin: 0; }
+
+h2 {
+  color: #58595b;
+  font-size: 12pt;
+  font-style: italic;
+  margin: 0; }
+
+/*------------------------------- */
+/*             BODY              */
+/*------------------------------- */
+body {
+  width: 100%;
+  padding: 15px;
+  margin: 0;
+  background-image: url("/images/compass-mapBG.jpg");
+  background-size: 100%;
+  background-repeat: no-repeat; }
+
+/*------------------------------- */
+/*            HEADER             */
+/*------------------------------- */
+.header {
+  display: block;
+  background: white;
+  width: 100%;
+  padding: 5px;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.35); }
+  .header:after {
+    content: ".";
+    display: block;
+    clear: both;
+    visibility: hidden;
+    line-height: 0;
+    height: 0; }
+  .header h1 {
+    margin-bottom: 5px; }
+
+.cache-info {
+  width: 85%;
+  display: inline-block;
+  float: left; }
+  .cache-info .cache-type {
+    display: inline-block;
+    margin-right: 5px; }
+  .cache-info .difficulty {
+    display: inline-block;
+    margin-right: 20px; }
+    .cache-info .difficulty i, .cache-info .difficulty .icon-star, .cache-info .difficulty .icon-star-empty {
+      color: #fcbf40;
+      font-size: 10pt; }
+  .cache-info .distance {
+    display: inline-block; }
+    .cache-info .distance i, .cache-info .distance h2 {
+      font-size: 10pt; }
+
+.menu-btn {
+  width: 13%;
+  display: inline-block;
+  border-left: 1px solid #dcddde;
+  height: 55px;
+  text-align: center;
+  font-size: 16pt;
+  padding: 5.25%;
+  color: #88af33; }
+
+/*------------------------------- */
+/*          COMPASS UI           */
+/*------------------------------- */
+.mini-map {
+  height: 100px;
+  width: 100%; }
+
+/*------------------------------- */
+/*          COMPASS UI           */
+/*------------------------------- */
+.magic-arrow {
+  position: relative;
+  height: 275px;
+  width: 275px;
+  margin: auto; }
+
+.menu-container {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 275px;
+  width: 275px;
+  margin: auto;
+  border-radius: 50%;
+  background: #d8d8d8;
+  background: -moz-linear-gradient(top, #d8d8d8 0%, white 100%);
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #d8d8d8), color-stop(100%, white));
+  background: -webkit-linear-gradient(top, #d8d8d8 0%, white 100%);
+  background: -o-linear-gradient(top, #d8d8d8 0%, white 100%);
+  background: -ms-linear-gradient(top, #d8d8d8 0%, white 100%);
+  background: linear-gradient(to bottom, #d8d8d8 0%, white 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#d8d8d8', endColorstr='#ffffff',GradientType=0 );
+  box-shadow: 0 0 75px white, 0 5px 5px rgba(0, 0, 0, 0.15) inset; }
+
+.compass-container {
+  position: absolute;
+  top: 12px;
+  left: 12px;
+  height: 250px;
+  width: 250px;
+  border-radius: 50%;
+  border: 6px solid white;
+  background: #e5e5e5;
+  background: -moz-linear-gradient(top, #e5e5e5 0%, #f2f2f2 100%);
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #e5e5e5), color-stop(100%, #f2f2f2));
+  background: -webkit-linear-gradient(top, #e5e5e5 0%, #f2f2f2 100%);
+  background: -o-linear-gradient(top, #e5e5e5 0%, #f2f2f2 100%);
+  background: -ms-linear-gradient(top, #e5e5e5 0%, #f2f2f2 100%);
+  background: linear-gradient(to bottom, #e5e5e5 0%, #f2f2f2 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#e5e5e5', endColorstr='#f2f2f2',GradientType=0 );
+  box-shadow: 0 9px 15px rgba(0, 0, 0, 0.25), 0 8px 10px rgba(0, 0, 0, 0.1) inset; }
+  .compass-container .directions {
+    position: absolute;
+    top: 4px;
+    left: 4px;
+    margin: auto;
+    height: 230px;
+    width: 230px;
+    background-image: url(/images/compass.png);
+    background-size: 100%;
+    background-repeat: no-repeat; }

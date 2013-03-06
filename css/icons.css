@@ -1,0 +1,29 @@
+@charset "UTF-8";
+
+@font-face {
+  font-family: 'icons';
+  src: url("../font/icons.eot?61973699");
+  src: url("../font/icons.eot?61973699#iefix") format('embedded-opentype'), url("../font/icons.woff?61973699") format('woff'), url("../font/icons.ttf?61973699") format('truetype'), url("../font/icons.svg?61973699#icons") format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+/* Chrome hack: SVG is rendered more smooth in Windozze. 100% magic, uncomment if you need it. */
+/* Note, that will break hinting! In other OS-es font will be not as sharp as it could be */
+/*
+@media screen and (-webkit-min-device-pixel-ratio:0) {
+  @font-face {
+    font-family: 'icons';
+    src: url('../font/icons.svg?61973699#icons') format('svg');
+  }
+}
+*/
+
+
+.icon-compass-1:before { content: '\28'; } /* '(' */
+.icon-pencil:before { content: '\270e'; } /* '✎' */
+.icon-direction:before { content: '\27a2'; } /* '➢' */
+.icon-cw:before { content: '\27f3'; } /* '⟳' */
+.icon-chat:before { content: '\e720'; } /* '' */
+.icon-compass:before { content: '\e728'; } /* '' */
+.icon-videocam-alt:before { content: '🏹'; } /* '\1f3f9' */
+.icon-book:before { content: '📕'; } /* '\1f4d5' */

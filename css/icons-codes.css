@@ -1,0 +1,11 @@
+@charset "UTF-8";
+
+
+.icon-compass-1:before { content: '\28'; } /* '(' */
+.icon-pencil:before { content: '\270e'; } /* '✎' */
+.icon-direction:before { content: '\27a2'; } /* '➢' */
+.icon-cw:before { content: '\27f3'; } /* '⟳' */
+.icon-chat:before { content: '\e720'; } /* '' */
+.icon-compass:before { content: '\e728'; } /* '' */
+.icon-videocam-alt:before { content: '🏹'; } /* '\1f3f9' */
+.icon-book:before { content: '📕'; } /* '\1f4d5' */
