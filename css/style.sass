@@ -115,7 +115,7 @@ body
   color: $green
 
 /*-------------------------------*/
-/*          COMPASS UI           */
+/*           MINI MAP            */
 /*-------------------------------*/
 
 .mini-map
@@ -163,6 +163,75 @@ body
         border-left: 1px solid white
         border-right: 1px solid rgba(0,0,0,0.1)
         border-top: 1px solid white
+        padding: 0
+        width: 50%
+        height: 50%
+        text-align: center
+        vertical-align: center
+        .sub-btn
+          position: relative
+          top: 10px
+          left: 10px
+          -webkit-transform: rotate(-45deg)
+          i[class^="icon"]
+            font-size: 24px
+            display: block
+          h2
+            margin-top: 10px
+  .back
+    position: absolute
+    top: 100px
+    left: 100px
+    width: 75px
+    height: 75px
+    .bezel-shadow, .bezel-highlight
+      width: 100%
+      height: 100%
+      border-radius: 50%
+      position: absolute
+      top: 0
+      left: 0
+    .bezel-shadow
+      background: -moz-linear-gradient(top,  rgba(0,0,0,0.1) 0%, rgba(255,255,255,0) 100%) /* FF3.6+ */
+      background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(0,0,0,0.1)), color-stop(100%,rgba(255,255,255,0))) /* Chrome,Safari4+ */
+      background: -webkit-linear-gradient(top,  rgba(0,0,0,0.1) 0%,rgba(255,255,255,0) 100%) /* Chrome10+,Safari5.1+ */
+      background: -o-linear-gradient(top,  rgba(0,0,0,0.1) 0%,rgba(255,255,255,0) 100%) /* Opera 11.10+ */
+      background: -ms-linear-gradient(top,  rgba(0,0,0,0.1) 0%,rgba(255,255,255,0) 100%) /* IE10+ */
+      background: linear-gradient(to bottom,  rgba(0,0,0,0.1) 0%,rgba(255,255,255,0) 100%) /* W3C */
+      filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#40000000', endColorstr='#ffffff',GradientType=0 ) /* IE6-9 */
+    .bezel-highlight
+      background: -moz-linear-gradient(top,  rgba(255,255,255,0) 0%, rgba(255,255,255,0.75) 100%) /* FF3.6+ */
+      background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(255,255,255,0)), color-stop(100%,rgba(255,255,255,0.75))) /* Chrome,Safari4+ */
+      background: -webkit-linear-gradient(top,  rgba(255,255,255,0) 0%,rgba(255,255,255,0.75) 100%) /* Chrome10+,Safari5.1+ */
+      background: -o-linear-gradient(top,  rgba(255,255,255,0) 0%,rgba(255,255,255,0.75) 100%) /* Opera 11.10+ */
+      background: -ms-linear-gradient(top,  rgba(255,255,255,0) 0%,rgba(255,255,255,0.75) 100%) /* IE10+ */
+      background: linear-gradient(to bottom,  rgba(255,255,255,0) 0%,rgba(255,255,255,0.75) 100%) /* W3C */
+      filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#40000000', endColorstr='#ffffff',GradientType=0 ) /* IE6-9 */
+    .cap
+      width: 84%
+      height: 84%
+      position: absolute
+      top: 8%
+      left: 8%
+      border-radius: 50%
+      background: #f5f4f2
+      box-shadow: 0 0 5px rgba(0,0,0,0.15) inset
+    .back-btn
+      width: 74%
+      height: 74%
+      position: absolute
+      top: 12.5%
+      left: 13.5%
+      background: #cddcec /* Old browsers */
+      background: -moz-linear-gradient(top, #cddcec 0%, #84a7d0 100%) /* FF3.6+ */
+      background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#cddcec), color-stop(100%,#84a7d0)) /* Chrome,Safari4+ */
+      background: -webkit-linear-gradient(top, #cddcec 0%,#84a7d0 100%) /* Chrome10+,Safari5.1+ */
+      background: -o-linear-gradient(top, #cddcec 0%,#84a7d0 100%) /* Opera 11.10+ */
+      background: -ms-linear-gradient(top, #cddcec 0%,#84a7d0 100%) /* IE10+ */
+      background: linear-gradient(to bottom, #cddcec 0%,#84a7d0 100%) /* W3C */
+      filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#cddcec', endColorstr='#84a7d0',GradientType=0 ) /* IE6-9 */
+      box-shadow: 0 1px 3px rgba(0,0,0,0.4)
+      border-radius: 50%
 
 .compass-container
   position: absolute
