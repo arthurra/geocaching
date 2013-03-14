@@ -32,21 +32,30 @@
         };
 
         
-        var locMarker = {
+        var startMarker = {
           path: google.maps.SymbolPath.CIRCLE,
           fillColor: "#7ca2ce",
           fillOpacity: 1,
-          scale: 5,
+          scale: 4,
           strokeColor: "transparent"
         };
 
-        var locMarkerHalo = {
+        var startMarkerHalo = {
           path: google.maps.SymbolPath.CIRCLE,
           fillColor: "white",
           fillOpacity: 0,
           scale: 0.75,
           strokeColor: "#a5bfdd",
-          strokeWeight: 15
+          strokeWeight: 12
+        };
+
+        var locMarker = {
+          path: google.maps.SymbolPath.FORWARD_CLOSED_ARROW,
+          fillColor: "#7ca2ce",
+          fillOpacity: 1,
+          scale: 5,
+          strokeColor: "transparent",
+          strokeWeight: 5
         };
 
 
@@ -66,9 +75,15 @@
               map: map
             });
 
-            var markerHalo = new google.maps.Marker({
+            var markerStart = new google.maps.Marker({
               position: pos,
-              icon: locMarkerHalo,
+              icon: startMarker,
+              map: map
+            });
+
+            var markerStartHalo = new google.maps.Marker({
+              position: pos,
+              icon: startMarkerHalo,
               map: map
             });
 
@@ -107,11 +122,12 @@
         %h1 Peppi's Cache
         .cache-type
         .difficulty
+          .icon-cache.green
           %i.icon-star
           %i.icon-star
           %i.icon-star-empty
         .distance
-          %i.icon-direction
+          .icon-direction
           %h2 1.1mi
       .menu-btn
         %i.icon-reorder

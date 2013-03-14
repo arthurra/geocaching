@@ -80,9 +80,9 @@ body
 
 #map-canvas
   width: 100%
-  height: 100%
+  height: 135%
   position: absolute
-  top: 0
+  top: -35%
   left: 0
   z-index: -1
 
@@ -109,13 +109,29 @@ body
   .difficulty
     display: inline-block
     margin-right: 20px
-    i, .icon-star, .icon-star-empty
+    .icon-cache
+      display: inline-block
+      height: 12px
+      width: 18px
+      background-repeat: no-repeat
+      &.green
+        background: url('../images/cache_green.png') !important
+        background-size: 100% !important
+    .icon-star, .icon-star-empty
       color: $yellow
       font-size: 10pt
   .distance
     display: inline-block
-    i, h2
+    h2
+      display: inline-block
       font-size: 10pt
+    .icon-direction
+      display: inline-block
+      height: 12px
+      width: 10px
+      background: url('../images/distance.png') !important
+      background-size: 100% !important
+      background-repeat: no-repeat
 
 .menu-btn
   width: 13%

@@ -57,9 +57,9 @@ body {
 /*------------------------------- */
 #map-canvas {
   width: 100%;
-  height: 100%;
+  height: 135%;
   position: absolute;
-  top: 0;
+  top: -35%;
   left: 0;
   z-index: -1; }
 
@@ -92,13 +92,29 @@ body {
   .cache-info .difficulty {
     display: inline-block;
     margin-right: 20px; }
-    .cache-info .difficulty i, .cache-info .difficulty .icon-star, .cache-info .difficulty .icon-star-empty {
+    .cache-info .difficulty .icon-cache {
+      display: inline-block;
+      height: 12px;
+      width: 18px;
+      background-repeat: no-repeat; }
+      .cache-info .difficulty .icon-cache.green {
+        background: url("../images/cache_green.png") !important;
+        background-size: 100% !important; }
+    .cache-info .difficulty .icon-star, .cache-info .difficulty .icon-star-empty {
       color: #fcbf40;
       font-size: 10pt; }
   .cache-info .distance {
     display: inline-block; }
-    .cache-info .distance i, .cache-info .distance h2 {
+    .cache-info .distance h2 {
+      display: inline-block;
       font-size: 10pt; }
+    .cache-info .distance .icon-direction {
+      display: inline-block;
+      height: 12px;
+      width: 10px;
+      background: url("../images/distance.png") !important;
+      background-size: 100% !important;
+      background-repeat: no-repeat; }
 
 .menu-btn {
   width: 13%;
