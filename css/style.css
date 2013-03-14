@@ -114,7 +114,7 @@ body {
 /*           MINI MAP            */
 /*------------------------------- */
 .mini-map {
-  height: 100px;
+  height: 300px;
   width: 100%; }
 
 /*------------------------------- */
@@ -217,11 +217,11 @@ body {
       background: linear-gradient(to bottom, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0.75) 100%);
       filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#40000000', endColorstr='#ffffff',GradientType=0 ); }
     .menu-container .back .cap {
-      width: 84%;
-      height: 84%;
+      width: 86%;
+      height: 86%;
       position: absolute;
-      top: 8%;
-      left: 8%;
+      top: 7%;
+      left: 7%;
       border-radius: 50%;
       background: #f5f4f2;
       box-shadow: 0 0 5px rgba(0, 0, 0, 0.15) inset; }
@@ -240,7 +240,14 @@ body {
       background: linear-gradient(to bottom, #cddcec 0%, #84a7d0 100%);
       filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#cddcec', endColorstr='#84a7d0',GradientType=0 );
       box-shadow: 0 1px 3px rgba(0, 0, 0, 0.4);
-      border-radius: 50%; }
+      border-radius: 50%;
+      text-align: center; }
+      .menu-container .back .back-btn i[class^="icon"] {
+        position: relative;
+        top: 15px;
+        color: white;
+        font-size: 24px;
+        text-shadow: 0 1px 5px rgba(0, 0, 0, 0.15); }
 
 .compass-container {
   position: absolute;
