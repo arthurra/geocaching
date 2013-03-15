@@ -21,6 +21,18 @@ ul
   margin: 0
 
 /*-------------------------------*/
+/*          ANIMATIONS           */
+/*-------------------------------*/
+
+@-webkit-keyframes pulse
+  0%
+    -webkit-transform: scale(0,0)
+    opacity: 1
+  100%
+    -webkit-transform: scale(4.5,4.5)
+    opacity: 0
+
+/*-------------------------------*/
 /*            COLORS             */
 /*-------------------------------*/
 
@@ -92,9 +104,11 @@ body
 
 .header
   @include clearfix
+  position: relative
   background: white
   width: 100%
   padding: 5px
+  z-index: 100
   box-shadow: 0 0 15px rgba(0,0,0,0.35)
   h1
     margin-bottom: 5px
@@ -160,6 +174,25 @@ body
   height: 275px
   width: 275px
   margin: auto
+
+.pulse1, .pulse2, pulse3
+  -webkit-transform-origin: center
+  position: absolute
+  width: 275px
+  height: 275px
+  border: 2px solid white
+  border-radius: 50%
+  background: transparent
+  box-shadow: 0 0 10px rgba(0,0,0,0.15), 0 0 5px rgba(0,0,0,0.1) inset
+
+.pulse1
+  -webkit-animation: pulse 5s ease-in-out 0s infinite 
+
+//.pulse2
+  -webkit-animation: pulse 6s ease-in-out 3s infinite
+
+
+
 
 .menu-container
   position: absolute
