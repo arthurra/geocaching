@@ -68,7 +68,7 @@ h2 {
 /*------------------------------- */
 #menu {
   display: block;
-  width: 0%;
+  width: 80%;
   height: 100%;
   position: fixed;
   top: 0;
@@ -80,22 +80,31 @@ h2 {
   z-index: 0;
   -webkit-transition: width 0.5s;
   -moz-transition: width 0.5s; }
-  #menu.open {
-    width: 80%; }
-    #menu.open + #main {
-      left: -80%; }
+  #menu.open + #main {
+    left: -80%; }
   #menu .header {
     text-align: center;
     padding: 20px 0 10px;
-    background: #333333; }
+    background: #424344;
+    background: -moz-linear-gradient(top, #424344 0%, #6e6f72 100%);
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #424344), color-stop(100%, #6e6f72));
+    background: -webkit-linear-gradient(top, #424344 0%, #6e6f72 100%);
+    background: -o-linear-gradient(top, #424344 0%, #6e6f72 100%);
+    background: -ms-linear-gradient(top, #424344 0%, #6e6f72 100%);
+    background: linear-gradient(to bottom, #424344 0%, #6e6f72 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#424344', endColorstr='#6e6f72',GradientType=0 ); }
     #menu .header h1 {
-      font-weight: bold; }
+      font-weight: bold;
+      color: #e6e7e8;
+      text-shadow: 0 5px 10px rgba(0, 0, 0, 0.25); }
   #menu ul li {
-    padding: 15px 25px;
-    margin: 15px 0;
+    padding: 18px 25px 12px;
+    margin: 15px -15px 15px 0px;
     background: white; }
     #menu ul li i[class^="icon"] {
-      display: inline-block; }
+      display: inline-block;
+      color: #58595b;
+      margin-right: 10px; }
     #menu ul li h2 {
       display: inline-block; }
 
