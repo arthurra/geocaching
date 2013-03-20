@@ -19,6 +19,10 @@
         $('div.back-btn').click(function() {
           $('div.compass-container').toggleClass('open');
         });
+
+        $('div.menu-btn').click(function() {
+          $('div#menu').toggleClass('open');
+        });
         
       });
 
@@ -101,7 +105,7 @@
         if (errorFlag) {
           var content = 'Error: The Geolocation service failed.';
         } else {
-          var content = 'Error: Your browser doesn\'t support geolocation.';
+          var content = 'Error: Your browser does not support geolocation.';
         }
 
         var options = {
@@ -116,63 +120,86 @@
       google.maps.event.addDomListener(window, 'load', initialize);
 
   %body
-    #map-canvas
-    .header
-      .cache-info  
-        %h1 Peppi's Cache
-        .cache-type
-        .difficulty
-          .icon-cache.green
-          %i.icon-star
-          %i.icon-star
-          %i.icon-star-empty
-        .distance
-          .icon-direction
-          %h2 1.1mi
-      .menu-btn
-        %i.icon-reorder
-    .mini-map
-    .magic-arrow
-      .pulse1
-      .pulse2
-      .menu-container
-        .dividers
-          %table
-            %tr
-              %td
-                .sub-btn.photo
-                  %i.icon-camera-retro
-                  %h2 Photo
-              %td
-                .sub-btn.text
-                  %i.icon-comment
-                  %h2 Text
-            %tr
-              %td
-                .sub-btn.guide
-                  %i.icon-book
-                  %h2 Guide
-              %td
-                .sub-btn.video
-                  %i.icon-facetime-video
-                  %h2 Video
-        .back
-          .bezel-shadow
-          .bezel-highlight
-          .cap
-          .back-btn
-            //%i.icon-back
-            %i.icon-reply
-      .compass-container
-        .directions
-        .arrow
-          .shadow
-          .pointer
-          .chizle
-          .cap  
-        .new-post-btn
-          / %i.icon-new-post
-          %i.icon-pencil
+    #menu
+      .header
+        %h1 Menu
+      %ul
+        %li 
+          %i.icon-
+          %h2 Nearby Caches
+        %li 
+          %i.icon-
+          %h2 Saved Caches
+        %li 
+          %i.icon-
+          %h2 Search
+        %li 
+          %i.icon-
+          %h2 Log
+        %li 
+          %i.icon-
+          %h2 Field Guide
+        %li 
+          %i.icon-
+          %h2 Settings
+    #main
+      #map-canvas
+      .header
+        .cache-info  
+          %h1 Peppi's Cache
+          .cache-type
+          .difficulty
+            .icon-cache.green
+            %i.icon-star
+            %i.icon-star
+            %i.icon-star-empty
+          .distance
+            .icon-direction
+            %h2 1.1mi
+        .menu-btn
+          %i.icon-reorder
+      .mini-map
+      .magic-arrow
+        .pulse1
+        .pulse2
+        .menu-container
+          .dividers
+            %table
+              %tr
+                %td
+                  .sub-btn.photo
+                    %i.icon-camera-retro
+                    %h2 Photo
+                %td
+                  .sub-btn.text
+                    %i.icon-comment
+                    %h2 Text
+              %tr
+                %td
+                  .sub-btn.guide
+                    %i.icon-book
+                    %h2 Guide
+                %td
+                  .sub-btn.video
+                    %i.icon-facetime-video
+                    %h2 Video
+          .back
+            .bezel-shadow
+            .bezel-highlight
+            .cap
+            .back-btn
+              //%i.icon-back
+              %i.icon-reply
+        .compass-container
+          .directions
+          .arrow
+            .shadow
+            .pointer
+            .chizle
+            .cap  
+          .new-post-btn
+            / %i.icon-new-post
+            %i.icon-pencil
 
 
 

@@ -19,6 +19,10 @@
         $('div.back-btn').click(function() {
           $('div.compass-container').toggleClass('open');
         });
+      
+        $('div.menu-btn').click(function() {
+          $('div#menu').toggleClass('open');
+        });
         
       });
       
@@ -101,7 +105,7 @@
         if (errorFlag) {
           var content = 'Error: The Geolocation service failed.';
         } else {
-          var content = 'Error: Your browser doesn\'t support geolocation.';
+          var content = 'Error: Your browser does not support geolocation.';
         }
       
         var options = {
@@ -117,84 +121,117 @@
     </script>
   </head>
   <body>
-    <div id='map-canvas'></div>
-    <div class='header'>
-      <div class='cache-info'>
-        <h1>Peppi's Cache</h1>
-        <div class='cache-type'></div>
-        <div class='difficulty'>
-          <div class='icon-cache green'></div>
-          <i class='icon-star'></i>
-          <i class='icon-star'></i>
-          <i class='icon-star-empty'></i>
-        </div>
-        <div class='distance'>
-          <div class='icon-direction'></div>
-          <h2>1.1mi</h2>
-        </div>
+    <div id='menu'>
+      <div class='header'>
+        <h1>Menu</h1>
       </div>
-      <div class='menu-btn'>
-        <i class='icon-reorder'></i>
-      </div>
+      <ul>
+        <li>
+          <i class='icon-'></i>
+          <h2>Nearby Caches</h2>
+        </li>
+        <li>
+          <i class='icon-'></i>
+          <h2>Saved Caches</h2>
+        </li>
+        <li>
+          <i class='icon-'></i>
+          <h2>Search</h2>
+        </li>
+        <li>
+          <i class='icon-'></i>
+          <h2>Log</h2>
+        </li>
+        <li>
+          <i class='icon-'></i>
+          <h2>Field Guide</h2>
+        </li>
+        <li>
+          <i class='icon-'></i>
+          <h2>Settings</h2>
+        </li>
+      </ul>
     </div>
-    <div class='mini-map'></div>
-    <div class='magic-arrow'>
-      <div class='pulse1'></div>
-      <div class='pulse2'></div>
-      <div class='menu-container'>
-        <div class='dividers'>
-          <table>
-            <tr>
-              <td>
-                <div class='sub-btn photo'>
-                  <i class='icon-camera-retro'></i>
-                  <h2>Photo</h2>
-                </div>
-              </td>
-              <td>
-                <div class='sub-btn text'>
-                  <i class='icon-comment'></i>
-                  <h2>Text</h2>
-                </div>
-              </td>
-            </tr>
-            <tr>
-              <td>
-                <div class='sub-btn guide'>
-                  <i class='icon-book'></i>
-                  <h2>Guide</h2>
-                </div>
-              </td>
-              <td>
-                <div class='sub-btn video'>
-                  <i class='icon-facetime-video'></i>
-                  <h2>Video</h2>
-                </div>
-              </td>
-            </tr>
-          </table>
-        </div>
-        <div class='back'>
-          <div class='bezel-shadow'></div>
-          <div class='bezel-highlight'></div>
-          <div class='cap'></div>
-          <div class='back-btn'>
-            <!-- /%i.icon-back -->
-            <i class='icon-reply'></i>
+    <div id='main'>
+      <div id='map-canvas'></div>
+      <div class='header'>
+        <div class='cache-info'>
+          <h1>Peppi's Cache</h1>
+          <div class='cache-type'></div>
+          <div class='difficulty'>
+            <div class='icon-cache green'></div>
+            <i class='icon-star'></i>
+            <i class='icon-star'></i>
+            <i class='icon-star-empty'></i>
+          </div>
+          <div class='distance'>
+            <div class='icon-direction'></div>
+            <h2>1.1mi</h2>
           </div>
         </div>
-      </div>
-      <div class='compass-container'>
-        <div class='directions'></div>
-        <div class='arrow'>
-          <div class='shadow'></div>
-          <div class='pointer'></div>
-          <div class='chizle'></div>
-          <div class='cap'></div>
+        <div class='menu-btn'>
+          <i class='icon-reorder'></i>
         </div>
-        <div class='new-post-btn'>
-          <!-- %i.icon-new-post -->
-          <i class='icon-pencil'></i>
+      </div>
+      <div class='mini-map'></div>
+      <div class='magic-arrow'>
+        <div class='pulse1'></div>
+        <div class='pulse2'></div>
+        <div class='menu-container'>
+          <div class='dividers'>
+            <table>
+              <tr>
+                <td>
+                  <div class='sub-btn photo'>
+                    <i class='icon-camera-retro'></i>
+                    <h2>Photo</h2>
+                  </div>
+                </td>
+                <td>
+                  <div class='sub-btn text'>
+                    <i class='icon-comment'></i>
+                    <h2>Text</h2>
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <div class='sub-btn guide'>
+                    <i class='icon-book'></i>
+                    <h2>Guide</h2>
+                  </div>
+                </td>
+                <td>
+                  <div class='sub-btn video'>
+                    <i class='icon-facetime-video'></i>
+                    <h2>Video</h2>
+                  </div>
+                </td>
+              </tr>
+            </table>
+          </div>
+          <div class='back'>
+            <div class='bezel-shadow'></div>
+            <div class='bezel-highlight'></div>
+            <div class='cap'></div>
+            <div class='back-btn'>
+              <!-- /%i.icon-back -->
+              <i class='icon-reply'></i>
+            </div>
+          </div>
+        </div>
+        <div class='compass-container'>
+          <div class='directions'></div>
+          <div class='arrow'>
+            <div class='shadow'></div>
+            <div class='pointer'></div>
+            <div class='chizle'></div>
+            <div class='cap'></div>
+          </div>
+          <div class='new-post-btn'>
+            <!-- %i.icon-new-post -->
+            <i class='icon-pencil'></i>
+          </div>
         </div>
       </div>
     </div>

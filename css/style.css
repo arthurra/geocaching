@@ -30,16 +30,23 @@ ul {
 @font-face {
   font-family: "caecilia";
   src: url("/fonts/caecilia_light/caecilialtstdlight.eot");
-  src: url("/fonts/caecilia_light/caecilialtstdlight.eot?#iefix") format("embedded-opentype"), url("/fonts/caecilia_light/caecilialtstdlight.woff") format("woff"), url("/fonts/caecilia_light/caecilialtstdlight.ttf") format("truetype"), url("/fonts/caecilia_light/caecilialtstdlight.svg#museo_300regular") format("svg");
+  src: url("/fonts/caecilia_light/caecilialtstdlight.eot?#iefix") format("embedded-opentype"), url("/fonts/caecilia_light/caecilialtstdlight.woff") format("woff"), url("/fonts/caecilia_light/caecilialtstdlight.ttf") format("truetype"), url("/fonts/caecilia_light/caecilialtstdlight.svg") format("svg");
   font-weight: light;
   font-style: normal; }
 
 @font-face {
   font-family: "caecilia";
   src: url("/fonts/caecilia_lightitalic/caecilialtstdlightitalic.eot");
-  src: url("/fonts/caecilia_lightitalic/caecilialtstdlightitalic.eot?#iefix") format("embedded-opentype"), url("/fonts/caecilia_lightitalic/caecilialtstdlightitalic.woff") format("woff"), url("/fonts/caecilia_lightitalic/caecilialtstdlightitalic.ttf") format("truetype"), url("/fonts/caecilia_lightitalic/caecilialtstdlightitalic.svg#museo_300regular") format("svg");
+  src: url("/fonts/caecilia_lightitalic/caecilialtstdlightitalic.eot?#iefix") format("embedded-opentype"), url("/fonts/caecilia_lightitalic/caecilialtstdlightitalic.woff") format("woff"), url("/fonts/caecilia_lightitalic/caecilialtstdlightitalic.ttf") format("truetype"), url("/fonts/caecilia_lightitalic/caecilialtstdlightitalic.svg") format("svg");
   font-weight: light;
   font-style: italic; }
+
+@font-face {
+  font-family: "caecilia";
+  src: url("/fonts/caecilia_bold/caecilialtstdbold.eot");
+  src: url("/fonts/caecilia_bold/caecilialtstdbold.eot?#iefix") format("embedded-opentype"), url("/fonts/caecilia_bold/caecilialtstdbold.woff") format("woff"), url("/fonts/caecilia_bold/caecilialtstdbold.ttf") format("truetype"), url("/fonts/caecilia_bold/caecilialtstdbold.svg") format("svg");
+  font-weight: bold;
+  font-style: normal; }
 
 * {
   font-family: caecilia;
@@ -57,11 +64,59 @@ h2 {
   margin: 0; }
 
 /*------------------------------- */
+/*        MENU TRANSITION        */
+/*------------------------------- */
+#menu {
+  display: block;
+  width: 0%;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  right: 0;
+  background: #d8e7be;
+  color: white;
+  padding: 15px;
+  box-shadow: 25px 0 50px rgba(0, 0, 0, 0.15) inset;
+  z-index: 0;
+  -webkit-transition: width 0.5s;
+  -moz-transition: width 0.5s; }
+  #menu.open {
+    width: 80%; }
+    #menu.open + #main {
+      left: -80%; }
+  #menu .header {
+    text-align: center;
+    padding: 20px 0 10px;
+    background: #333333; }
+    #menu .header h1 {
+      font-weight: bold; }
+  #menu ul li {
+    padding: 15px 25px;
+    margin: 15px 0;
+    background: white; }
+    #menu ul li i[class^="icon"] {
+      display: inline-block; }
+    #menu ul li h2 {
+      display: inline-block; }
+
+#main {
+  display: block;
+  position: relative;
+  width: 100%;
+  height: 100%;
+  float: left;
+  margin: 0;
+  padding: 15px;
+  z-index: 1000;
+  -webkit-transition: left 0.5s;
+  -moz-transition: left 0.5s;
+  overflow: hidden; }
+
+/*------------------------------- */
 /*             BODY              */
 /*------------------------------- */
 body {
   width: 100%;
-  padding: 15px;
   margin: 0; }
 
 /*------------------------------- */
@@ -177,6 +232,7 @@ body {
   width: 275px;
   margin: auto;
   border-radius: 50%;
+  overflow: hidden;
   background: #d8d8d8;
   background: -moz-linear-gradient(top, #d8d8d8 0%, white 100%);
   background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #d8d8d8), color-stop(100%, white));
@@ -205,6 +261,8 @@ body {
         height: 50%;
         text-align: center;
         vertical-align: center; }
+        .menu-container .dividers table tr td:active {
+          background: rgba(0, 0, 0, 0.1); }
         .menu-container .dividers table tr td .sub-btn {
           position: relative;
           -webkit-transform: rotate(-45deg); }
