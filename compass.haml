@@ -23,6 +23,10 @@
         $('div.menu-btn').click(function() {
           $('div#menu').toggleClass('open');
         });
+
+        $('div.map-btn').click(function() {
+          $('div#menu').toggleClass('open');
+        });
         
       });
 
@@ -120,7 +124,7 @@
       google.maps.event.addDomListener(window, 'load', initialize);
 
   %body
-    #menu.open
+    #menu
       .header
         .map-btn
           %i.icon-map-marker
