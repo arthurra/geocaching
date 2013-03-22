@@ -101,7 +101,7 @@ h2 {
     position: relative;
     text-align: center;
     padding: 5px 0;
-    margin-bottom: 15px;
+    margin-bottom: 10px;
     background: white;
     z-index: 1000; }
     #menu .header .map-btn {
@@ -126,12 +126,11 @@ h2 {
     margin: 0 15px;
     background: white;
     border-bottom: 1px solid #dcddde;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.07);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.15);
     -webkit-transition: all 0.3s;
     -webkit-transform-origin: center top;
     -webkit-transform-style: preserve-3d;
-    -webkit-transform: perspective(600px 600px);
-    -webkit-transform: rotateX(90deg); }
+    -webkit-transform: perspective(600px 600px); }
     #menu ul li:nth-child(1) {
       -webkit-transition-delay: 0.5s;
       z-index: 600; }
