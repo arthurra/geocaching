@@ -9,6 +9,9 @@ ul {
   padding: 0;
   margin: 0; }
 
+a {
+  text-decoration: none; }
+
 /*------------------------------- */
 /*          ANIMATIONS           */
 /*------------------------------- */
@@ -94,8 +97,11 @@ h2 {
   #menu.open + #main {
     top: 80%;
     box-shadow: 0 -25px 50px rgba(0, 0, 0, 0.15); }
+  #menu.open .header {
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.25); }
   #menu.open ul li {
     top: 0 !important;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.15);
     -webkit-transform: rotateX(0deg); }
   #menu .header {
     position: relative;
@@ -103,7 +109,8 @@ h2 {
     padding: 5px 0;
     margin-bottom: 10px;
     background: white;
-    z-index: 1000; }
+    z-index: 1000;
+    -webkit-transition: all 0.5s; }
     #menu .header .map-btn {
       width: 60px;
       float: right;
@@ -126,7 +133,6 @@ h2 {
     margin: 0 15px;
     background: white;
     border-bottom: 1px solid #dcddde;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.15);
     -webkit-transition: all 0.3s;
     -webkit-transform-origin: center top;
     -webkit-transform-style: preserve-3d;
@@ -135,19 +141,19 @@ h2 {
       -webkit-transition-delay: 0.5s;
       z-index: 600; }
     #menu ul li:nth-child(2) {
-      -webkit-transition-delay: 0.7s;
+      -webkit-transition-delay: 0.6s;
       z-index: 500; }
     #menu ul li:nth-child(3) {
-      -webkit-transition-delay: 0.9s;
+      -webkit-transition-delay: 0.7s;
       z-index: 400; }
     #menu ul li:nth-child(4) {
-      -webkit-transition-delay: 1.1s;
+      -webkit-transition-delay: 0.8s;
       z-index: 300; }
     #menu ul li:nth-child(5) {
-      -webkit-transition-delay: 1.3s;
+      -webkit-transition-delay: 0.9s;
       z-index: 200; }
     #menu ul li:nth-child(6) {
-      -webkit-transition-delay: 1.5s;
+      -webkit-transition-delay: 1s;
       z-index: 100; }
     #menu ul li i[class^="icon"] {
       display: inline-block;
@@ -188,10 +194,45 @@ body {
   left: 0;
   z-index: -1; }
 
+.canvas-overlay {
+  width: 100%;
+  height: 110%;
+  position: absolute;
+  left: 0;
+  top: -15px;
+  z-index: -1;
+  background: #d8e7be;
+  opacity: 0.75; }
+
 /*------------------------------- */
 /*            HEADER             */
 /*------------------------------- */
 .header {
+  position: relative;
+  text-align: center;
+  padding: 5px 0;
+  margin-bottom: 10px;
+  background: white;
+  z-index: 1000;
+  -webkit-transition: all 0.5s;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.35); }
+  .header h1 {
+    display: inline-block;
+    margin: 15px 0 7px 0;
+    color: #88af33; }
+
+.menu-btn {
+  width: 60px;
+  display: inline-block;
+  float: right;
+  border-left: 1px solid #dcddde;
+  height: 55px;
+  text-align: center;
+  font-size: 16pt;
+  padding-top: 18px;
+  color: #88af33; }
+
+.cache-header {
   display: block;
   position: relative;
   background: white;
@@ -199,59 +240,47 @@ body {
   padding: 5px;
   z-index: 100;
   box-shadow: 0 0 15px rgba(0, 0, 0, 0.35); }
-  .header:after {
+  .cache-header:after {
     content: ".";
     display: block;
     clear: both;
     visibility: hidden;
     line-height: 0;
     height: 0; }
-  .header h1 {
-    margin-bottom: 5px; }
-
-.cache-info {
-  width: 85%;
-  display: inline-block;
-  float: left; }
-  .cache-info .cache-type {
+  .cache-header .cache-info {
     display: inline-block;
-    margin-right: 5px; }
-  .cache-info .difficulty {
-    display: inline-block;
-    margin-right: 20px; }
-    .cache-info .difficulty .icon-cache {
+    float: left; }
+    .cache-header .cache-info h1 {
+      margin-bottom: 5px; }
+    .cache-header .cache-info .cache-type {
       display: inline-block;
-      height: 12px;
-      width: 18px;
-      background-repeat: no-repeat; }
-      .cache-info .difficulty .icon-cache.green {
-        background: url("../images/cache_green.png") !important;
-        background-size: 100% !important; }
-    .cache-info .difficulty .icon-star, .cache-info .difficulty .icon-star-empty {
-      color: #fcbf40;
-      font-size: 10pt; }
-  .cache-info .distance {
-    display: inline-block; }
-    .cache-info .distance h2 {
+      margin-right: 5px; }
+    .cache-header .cache-info .difficulty {
       display: inline-block;
-      font-size: 10pt; }
-    .cache-info .distance .icon-direction {
-      display: inline-block;
-      height: 12px;
-      width: 10px;
-      background: url("../images/distance.png") !important;
-      background-size: 100% !important;
-      background-repeat: no-repeat; }
-
-.menu-btn {
-  width: 13%;
-  display: inline-block;
-  border-left: 1px solid #dcddde;
-  height: 55px;
-  text-align: center;
-  font-size: 16pt;
-  padding: 5.25%;
-  color: #88af33; }
+      margin-right: 20px; }
+      .cache-header .cache-info .difficulty .icon-cache {
+        display: inline-block;
+        height: 12px;
+        width: 18px;
+        background-repeat: no-repeat; }
+        .cache-header .cache-info .difficulty .icon-cache.green {
+          background: url("../images/cache_green.png") !important;
+          background-size: 100% !important; }
+      .cache-header .cache-info .difficulty .icon-star, .cache-header .cache-info .difficulty .icon-star-empty {
+        color: #fcbf40;
+        font-size: 10pt; }
+    .cache-header .cache-info .distance {
+      display: inline-block; }
+      .cache-header .cache-info .distance h2 {
+        display: inline-block;
+        font-size: 10pt; }
+      .cache-header .cache-info .distance .icon-direction {
+        display: inline-block;
+        height: 12px;
+        width: 10px;
+        background: url("../images/distance.png") !important;
+        background-size: 100% !important;
+        background-repeat: no-repeat; }
 
 /*------------------------------- */
 /*           MINI MAP            */
@@ -474,3 +503,64 @@ body {
       color: #85a6d0;
       font-size: 30px;
       text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25), 0 1px 1px rgba(255, 255, 255, 0.5); }
+
+/*------------------------------- */
+/*          CACHE INFO           */
+/*------------------------------- */
+.cache-data {
+  width: 100%;
+  background: white;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.25);
+  padding: 10px; }
+  .cache-data .map {
+    width: 50%;
+    height: 150px;
+    display: inline-block;
+    background: gray; }
+  .cache-data .specs {
+    display: inline-block;
+    padding-left: 5px;
+    width: 48%;
+    float: right; }
+    .cache-data .specs .cache-type, .cache-data .specs .findabiliy {
+      margin-bottom: 15px; }
+    .cache-data .specs .icon-cache {
+      display: inline-block;
+      height: 12px;
+      width: 18px;
+      background-repeat: no-repeat; }
+      .cache-data .specs .icon-cache.green {
+        background: url("../images/cache_green.png") !important;
+        background-size: 100% !important; }
+  .cache-data .description {
+    margin: 35px 0; }
+  .cache-data .save-cache-btn, .cache-data .goto-cache-btn {
+    width: 48%;
+    height: 55px;
+    display: inline-block;
+    background: grey;
+    text-align: center; }
+    .cache-data .save-cache-btn h3, .cache-data .goto-cache-btn h3 {
+      font-weight: bold; }
+  .cache-data .save-cache-btn {
+    margin-right: 2%;
+    border: 1px solid #88af33;
+    background: #e2edce;
+    background: -moz-linear-gradient(top, #e2edce 0%, #cee1ae 100%);
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #e2edce), color-stop(100%, #cee1ae));
+    background: -webkit-linear-gradient(top, #e2edce 0%, #cee1ae 100%);
+    background: -o-linear-gradient(top, #e2edce 0%, #cee1ae 100%);
+    background: -ms-linear-gradient(top, #e2edce 0%, #cee1ae 100%);
+    background: linear-gradient(to bottom, #e2edce 0%, #cee1ae 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#e2edce', endColorstr='#cee1ae',GradientType=0 ); }
+  .cache-data .goto-cache-btn {
+    color: #e6e7e8;
+    border: 1px solid black;
+    background: #6e6f72;
+    background: -moz-linear-gradient(top, #6e6f72 1%, #424344 100%);
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(1%, #6e6f72), color-stop(100%, #424344));
+    background: -webkit-linear-gradient(top, #6e6f72 1%, #424344 100%);
+    background: -o-linear-gradient(top, #6e6f72 1%, #424344 100%);
+    background: -ms-linear-gradient(top, #6e6f72 1%, #424344 100%);
+    background: linear-gradient(to bottom, #6e6f72 1%, #424344 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#6e6f72', endColorstr='#424344',GradientType=0 ); }

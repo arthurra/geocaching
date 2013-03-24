@@ -1,0 +1,86 @@
+%html
+  %head
+    %title
+      Compass
+    %link{:href => "css/style.css", :rel => "stylesheet"}
+    / %link{:href => "css/icons.css", :rel => "stylesheet"}
+    %link{:href => "http://netdna.bootstrapcdn.com/font-awesome/3.0/css/font-awesome.css", :rel => "stylesheet"}
+    %script{:src => "http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"}
+    %script{:src => "https://maps.googleapis.com/maps/api/js?key=AIzaSyCf1oFgc6RXllTWFTc2gWZJazqkP2IoCQg&sensor=true"}
+    
+  %body
+    #menu
+      .header
+        .map-btn
+          %i.icon-map-marker
+        %h1 Menu
+      %ul
+        %li 
+          %a{:href => "nearby.html"}
+            %i.icon-screenshot
+            %h2 Nearby Caches
+        %li 
+          %i.icon-cloud-download
+          %h2 Saved Caches
+        %li 
+          %i.icon-search
+          %h2 Search
+        %li 
+          %i.icon-pencil
+          %h2 Log
+        %li 
+          %i.icon-book
+          %h2 Field Guide
+        %li 
+          %i.icon-cogs
+          %h2 Settings
+    #main
+      #map-canvas
+      .canvas-overlay
+      .header
+        %h1 Peppi's Cache
+        .menu-btn
+          %i.icon-reorder
+      .cache-data
+        .map
+        .specs
+          .cache-type
+            .icon-cache.green
+            Traditional
+          .findabiliy
+            .icon-cache.green
+            %i.icon-star
+            %i.icon-star
+            %i.icon-star-empty
+            %i.icon-star-empty
+            %i.icon-star-empty
+          .terrain
+            .icon-cache.green
+            %i.icon-star
+            %i.icon-star
+            %i.icon-star-empty
+            %i.icon-star-empty
+            %i.icon-star-empty
+        .description
+          %p Park n Grab.
+          %p Log only. Bring writing instrument. 
+          %p Another easy cache to get your numbers up. 
+          %p CONGRATS!!!! to wwbd on FTF
+        %a.save-cache-btn{:href => ""}
+          %h3 Save Cache
+        %a.goto-cache-btn{:href => "index.html"}
+          %h3 Navigate
+      .cache-log
+      
+
+  %script{:src => "/js/toggles-ck.js"}
+  %script{:src => "/js/map_controls-ck.js"}
+
+
+
+
+
+
+
+
+
