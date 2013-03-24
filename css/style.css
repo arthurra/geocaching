@@ -174,7 +174,7 @@ h2 {
   z-index: 5000;
   -webkit-transition: top 0.5s;
   -moz-transition: top 0.5s;
-  overflow: hidden; }
+  overflow: auto; }
 
 /*------------------------------- */
 /*             BODY              */
@@ -582,51 +582,99 @@ body {
     visibility: hidden;
     line-height: 0;
     height: 0; }
-  .cache-log h1 {
-    color: #58595b;
-    display: inline-block;
-    float: left;
-    width: 49%;
-    margin: 15px 0; }
-  .cache-log .log-cache-slider {
-    display: block;
-    display: inline-block;
-    float: right;
-    width: 60px;
-    height: 60px;
-    padding: 5px;
-    border-radius: 35px;
-    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2) inset;
-    -webkit-transition: all 0.3s; }
-    .cache-log .log-cache-slider:after {
+  .cache-log header {
+    display: block; }
+    .cache-log header:after {
       content: ".";
       display: block;
       clear: both;
       visibility: hidden;
       line-height: 0;
       height: 0; }
-    .cache-log .log-cache-slider .btn {
+    .cache-log header h1 {
+      position: absolute;
+      color: #58595b;
+      display: inline-block;
       float: left;
-      width: 50px;
-      height: 50px;
-      border-radius: 50%;
-      padding-top: 15px;
-      text-align: center;
-      border: 2px solid white;
-      box-shadow: 0 0 10px 2px rgba(0, 0, 0, 0.15);
-      background: #cddcec;
-      background: -moz-linear-gradient(top, #cddcec 0%, #84a7d0 100%);
-      background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #cddcec), color-stop(100%, #84a7d0));
-      background: -webkit-linear-gradient(top, #cddcec 0%, #84a7d0 100%);
-      background: -o-linear-gradient(top, #cddcec 0%, #84a7d0 100%);
-      background: -ms-linear-gradient(top, #cddcec 0%, #84a7d0 100%);
-      background: linear-gradient(to bottom, #cddcec 0%, #84a7d0 100%);
-      filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#cddcec', endColorstr='#84a7d0',GradientType=0 );
-      -webkit-transition: all 0.3s; }
-      .cache-log .log-cache-slider .btn i[class^="icon"] {
+      width: 49%;
+      margin: 15px 0;
+      z-index: 1; }
+    .cache-log header .log-cache-slider {
+      display: block;
+      position: relative;
+      display: inline-block;
+      float: right;
+      width: 60px;
+      height: 60px;
+      padding: 5px;
+      border-radius: 35px;
+      background: white;
+      overflow: hidden;
+      -webkit-transition: all 0.6s;
+      z-index: 1000; }
+      .cache-log header .log-cache-slider:after {
+        content: ".";
+        display: block;
+        clear: both;
+        visibility: hidden;
+        line-height: 0;
+        height: 0; }
+      .cache-log header .log-cache-slider .btn {
+        position: relative;
+        float: left;
+        width: 50px;
+        height: 50px;
+        border-radius: 50%;
+        padding-top: 15px;
+        text-align: center;
+        border: 2px solid white;
+        box-shadow: 0 0 10px 2px rgba(0, 0, 0, 0.15);
+        background: #cddcec;
+        background: -moz-linear-gradient(top, #cddcec 0%, #84a7d0 100%);
+        background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #cddcec), color-stop(100%, #84a7d0));
+        background: -webkit-linear-gradient(top, #cddcec 0%, #84a7d0 100%);
+        background: -o-linear-gradient(top, #cddcec 0%, #84a7d0 100%);
+        background: -ms-linear-gradient(top, #cddcec 0%, #84a7d0 100%);
+        background: linear-gradient(to bottom, #cddcec 0%, #84a7d0 100%);
+        filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#cddcec', endColorstr='#84a7d0',GradientType=0 );
+        -webkit-transition: all 0.3s;
+        z-index: 100; }
+        .cache-log header .log-cache-slider .btn i[class^="icon"] {
+          font-weight: bold;
+          font-size: 22px;
+          color: #85a6d0;
+          text-shadow: 0 1px 1px rgba(255, 255, 255, 0.5); }
+      .cache-log header .log-cache-slider h2 {
+        color: white;
+        position: absolute;
+        top: 22px;
+        left: -50px;
+        width: 175px;
+        opacity: 0;
         font-weight: bold;
-        font-size: 22px;
-        color: #85a6d0;
-        text-shadow: 0 1px 1px rgba(255, 255, 255, 0.5); }
-    .cache-log .log-cache-slider:hover {
-      width: 175px; }
+        text-shadow: 0 1px 2px #85a6d0;
+        -webkit-transition: all 0.6s;
+        -webkit-transition-delay: 0.4s;
+        z-index: 1; }
+      .cache-log header .log-cache-slider:hover {
+        width: 342px;
+        box-shadow: 0 0 5px rgba(0, 0, 0, 0.2) inset;
+        background: #cddcec; }
+        .cache-log header .log-cache-slider:hover .btn {
+          box-shadow: 0 0 5px 2px rgba(0, 0, 0, 0.1); }
+        .cache-log header .log-cache-slider:hover h2 {
+          opacity: 1;
+          left: 75px; }
+  .cache-log .user-post {
+    margin-top: 15px;
+    padding: 10px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.25); }
+    .cache-log .user-post .user-name {
+      font-size: 18px;
+      margin-bottom: 0px;
+      color: gray; }
+    .cache-log .user-post p {
+      font-size: 14px;
+      margin: 5px 0; }
+    .cache-log .user-post.found {
+      border-left: 5px solid #88af33; }
