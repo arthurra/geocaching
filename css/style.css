@@ -568,6 +568,9 @@ body {
     background: linear-gradient(to bottom, #6e6f72 1%, #424344 100%);
     filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#6e6f72', endColorstr='#424344',GradientType=0 ); }
 
+/*------------------------------- */
+/*          CACHE LOG            */
+/*------------------------------- */
 .cache-log {
   display: block;
   width: 100%;

@@ -1,7 +1,7 @@
 %html
   %head
     %title
-      Nearby Caches
+      Compass
     %link{:href => "css/style.css", :rel => "stylesheet"}
     / %link{:href => "css/icons.css", :rel => "stylesheet"}
     %link{:href => "http://netdna.bootstrapcdn.com/font-awesome/3.0/css/font-awesome.css", :rel => "stylesheet"}
@@ -16,8 +16,9 @@
         %h1 Menu
       %ul
         %li 
-          %i.icon-screenshot
-          %h2 Nearby Caches
+          %a{:href => "nearby.html"}
+            %i.icon-screenshot
+            %h2 Nearby Caches
         %li 
           %a{:href => "saved_caches.html"}
             %i.icon-cloud-download
@@ -37,52 +38,13 @@
           %h2 Settings
     #main
       #map-canvas
+      .canvas-overlay
       .header
-        %h1 Nearby Caches
+        %h1 Adventure Log
         .menu-btn
           %i.icon-reorder
-      .mini-map
-      .magic-arrow
-        .pulse1
-        .pulse2
-        .menu-container
-          .dividers
-            %table
-              %tr
-                %td
-                  .sub-btn.photo
-                    %i.icon-camera-retro
-                    %h2 Photo
-                %td
-                  .sub-btn.text
-                    %i.icon-comment
-                    %h2 Text
-              %tr
-                %td
-                  .sub-btn.guide
-                    %i.icon-book
-                    %h2 Guide
-                %td
-                  .sub-btn.video
-                    %i.icon-facetime-video
-                    %h2 Video
-          .back
-            .bezel-shadow
-            .bezel-highlight
-            .cap
-            .back-btn
-              //%i.icon-back
-              %i.icon-reply
-        .compass-container
-          .directions
-          .arrow
-            .shadow
-            .pointer
-            .chizle
-            .cap  
-          .new-post-btn
-            / %i.icon-new-post
-            %i.icon-pencil
+      
+      
 
   %script{:src => "/js/toggles-ck.js"}
   %script{:src => "/js/map_controls-ck.js"}
