@@ -583,7 +583,8 @@ body {
     line-height: 0;
     height: 0; }
   .cache-log header {
-    display: block; }
+    display: block;
+    position: relative; }
     .cache-log header:after {
       content: ".";
       display: block;
@@ -597,8 +598,33 @@ body {
       display: inline-block;
       float: left;
       width: 49%;
-      margin: 15px 0;
+      margin: 0px 0px 5px;
       z-index: 1; }
+    .cache-log header .cache-stats {
+      position: absolute;
+      top: 35px; }
+      .cache-log header .cache-stats .found, .cache-log header .cache-stats .not-found, .cache-log header .cache-stats .maintenance {
+        float: left;
+        margin-right: 16px;
+        width: 35px;
+        padding: 5px; }
+        .cache-log header .cache-stats .found h2, .cache-log header .cache-stats .not-found h2, .cache-log header .cache-stats .maintenance h2 {
+          display: inline-block; }
+      .cache-log header .cache-stats div[class^="icon"] {
+        width: 10px;
+        height: 10px;
+        border-radius: 50%;
+        display: inline-block;
+        margin: 2px 2px 0 0; }
+      .cache-log header .cache-stats .icon-found {
+        background: #88af33; }
+      .cache-log header .cache-stats .icon-not-found {
+        background: red; }
+      .cache-log header .cache-stats .icon-wrench {
+        font-size: 11px;
+        position: relative;
+        top: -1px;
+        color: orange; }
     .cache-log header .log-cache-slider {
       display: block;
       position: relative;
