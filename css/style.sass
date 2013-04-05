@@ -301,6 +301,7 @@ body
   background: white
   width: 100%
   padding: 5px
+  padding-right: 0
   z-index: 100
   box-shadow: 0 0 15px rgba(0,0,0,0.35)
   .cache-info
@@ -767,10 +768,43 @@ body
       border-left: 5px solid $green
 
 
-
+/*-------------------------------*/
+/*         SAVED CACHES          */
+/*-------------------------------*/
       
+.saved-caches
+  box-shadow: 0 0 15px rgba(0,0,0,0.35)
+  .cache-header
+    box-shadow: 0 0 0 transparent !important
+    margin-bottom: 3px
+    //border-bottom: 1 px solid #dcddde
 
-
+.search
+  @include clearfix
+  width: 100%
+  padding: 10px 0 10px 10px
+  margin: 25px 0
+  background: #fff
+  box-shadow: 0 0 15px rgba(0,0,0,0.35)
+  .search-btn
+    width: 20%
+    display: inline-block
+    float: right
+    border-left: 1px solid #dcddde
+    height: 55px
+    text-align: center
+    font-size: 16pt
+    padding-top: 18px
+    color: $green
+  input
+    display: inline-block
+    float: left
+    height: 55px
+    width: 75%
+    line-height: 40px
+    font-size: 24px
+    &:focus
+      outline: 0
 
 
 
