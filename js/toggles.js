@@ -15,5 +15,9 @@ $(document).ready(function() {
   $('div.map-btn').click(function() {
     $('div#menu').toggleClass('open');
   });
+
+  $('div.cache-adv-log').click(function() {
+    $(this).toggleClass('closed');
+  });
   
 });
