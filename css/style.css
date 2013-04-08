@@ -68,14 +68,44 @@ a {
   font-weight: bold;
   font-style: normal; }
 
+@font-face {
+  font-family: "brandon_grotesque";
+  src: url("/fonts/bg_bold_it/brandon_bld_it-webfont.eot");
+  src: url("/fonts/bg_bold_it/brandon_bld_it-webfont.eot?#iefix") format("embedded-opentype"), url("/fonts/bg_bold_it/brandon_bld_it-webfont.woff") format("woff"), url("/fonts/bg_bold_it/brandon_bld_it-webfont.ttf") format("truetype"), url("/fonts/bg_bold_it/brandon_bld_it-webfont.svg#brandon_grotesquebold_italic") format("svg");
+  font-weight: normal;
+  font-style: italic; }
+
+@font-face {
+  font-family: "brandon_grotesque";
+  src: url("/fonts/bg_bold/brandon_bld-webfont.eot");
+  src: url("/fonts/bg_bold/brandon_bld-webfont.eot?#iefix") format("embedded-opentype"), url("/fonts/bg_bold/brandon_bld-webfont.woff") format("woff"), url("/fonts/bg_bold/brandon_bld-webfont.ttf") format("truetype"), url("/fonts/bg_bold/brandon_bld-webfont.svg#brandon_grotesquebold") format("svg");
+  font-weight: bold;
+  font-style: normal; }
+
+@font-face {
+  font-family: "brandon_grotesque";
+  src: url("/fonts/bg_reg_it/brandon_reg_it-webfont.eot");
+  src: url("/fonts/bg_reg_it/brandon_reg_it-webfont.eot?#iefix") format("embedded-opentype"), url("/fonts/bg_reg_it/brandon_reg_it-webfont.woff") format("woff"), url("/fonts/bg_reg_it/brandon_reg_it-webfont.ttf") format("truetype"), url("/fonts/bg_reg_it/brandon_reg_it-webfont.svg#brandon_grotesqueRgIt") format("svg");
+  font-weight: normal;
+  font-style: italic; }
+
+@font-face {
+  font-family: "brandon_grotesque";
+  src: url("/fonts/bg_reg/brandon_reg-webfont.eot");
+  src: url("/fonts/bg_reg/brandon_reg-webfont.eot?#iefix") format("embedded-opentype"), url("/fonts/bg_reg/brandon_reg-webfont.woff") format("woff"), url("/fonts/bg_reg/brandon_reg-webfont.ttf") format("truetype"), url("/fonts/bg_reg/brandon_reg-webfont.svg#brandon_grotesque_regularRg") format("svg");
+  font-weight: normal;
+  font-style: normal; }
+
 * {
-  font-family: caecilia;
+  font-family: brandon_grotesque;
   font-weight: normal; }
 
 h1 {
   color: #88af33;
   font-size: 20pt;
-  margin: 0; }
+  margin: 0;
+  font-weight: bold;
+  text-transform: uppercase; }
 
 h2 {
   color: #58595b;
@@ -582,7 +612,7 @@ body {
   background: white;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.25);
   padding: 10px;
-  margin-top: 15px; }
+  margin: 15px 0; }
   .cache-log:after {
     content: ".";
     display: block;
@@ -601,20 +631,17 @@ body {
       line-height: 0;
       height: 0; }
     .cache-log header h1 {
-      position: absolute;
+      position: relative;
+      top: 15px;
       color: #58595b;
       display: inline-block;
-      float: left;
-      width: 49%;
-      margin: 0px 0px 5px;
+      margin: 0px 15px 25px 0px;
       z-index: 1; }
     .cache-log header .cache-stats {
-      position: absolute;
-      top: 35px; }
+      position: relative;
+      top: 10px; }
       .cache-log header .cache-stats .found, .cache-log header .cache-stats .not-found, .cache-log header .cache-stats .maintenance {
         float: left;
-        margin-right: 16px;
-        width: 35px;
         padding: 5px; }
         .cache-log header .cache-stats .found h2, .cache-log header .cache-stats .not-found h2, .cache-log header .cache-stats .maintenance h2 {
           display: inline-block; }
@@ -626,10 +653,14 @@ body {
         margin: 2px 2px 0 0; }
       .cache-log header .cache-stats .icon-ok-sign {
         font-size: 12px;
-        color: #88af33; }
+        color: #88af33;
+        position: relative;
+        top: -1px; }
       .cache-log header .cache-stats .icon-remove-sign {
         font-size: 12px;
-        color: red; }
+        color: red;
+        position: relative;
+        top: -1px; }
       .cache-log header .cache-stats .icon-wrench {
         font-size: 12px;
         position: relative;
@@ -637,7 +668,9 @@ body {
         color: orange; }
     .cache-log header .log-cache-slider {
       display: block;
-      position: relative;
+      position: absolute;
+      right: 0;
+      top: 0;
       display: inline-block;
       float: right;
       width: 60px;
@@ -680,14 +713,13 @@ body {
           font-size: 22px;
           color: #85a6d0;
           text-shadow: 0 1px 1px rgba(255, 255, 255, 0.5); }
-      .cache-log header .log-cache-slider h2 {
+      .cache-log header .log-cache-slider h1 {
         color: white;
         position: absolute;
-        top: 22px;
+        top: 15px;
         left: -50px;
-        width: 175px;
+        width: 250px;
         opacity: 0;
-        font-weight: bold;
         text-shadow: 0 1px 2px #85a6d0;
         -webkit-transition: all 0.6s;
         -webkit-transition-delay: 0.4s;
@@ -698,7 +730,7 @@ body {
         background: #cddcec; }
         .cache-log header .log-cache-slider:hover .btn {
           box-shadow: 0 0 5px 2px rgba(0, 0, 0, 0.1); }
-        .cache-log header .log-cache-slider:hover h2 {
+        .cache-log header .log-cache-slider:hover h1 {
           opacity: 1;
           left: 75px; }
   .cache-log .user-post {
