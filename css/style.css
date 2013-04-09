@@ -856,7 +856,7 @@ body {
   position: relative;
   height: 35px;
   width: 5px;
-  margin: 0 auto 15px;
+  margin: 0 auto;
   background: #88af33;
   opacity: 0.75; }
   .log .timeline:last-child {
