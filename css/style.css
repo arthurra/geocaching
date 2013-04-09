@@ -562,7 +562,8 @@ body {
     width: 50%;
     height: 150px;
     display: inline-block;
-    background: gray; }
+    background: url("../images/cache_info_map.png");
+    background-size: 150% 100%; }
   .cache-data .specs {
     display: inline-block;
     padding-left: 5px;
@@ -571,9 +572,11 @@ body {
     .cache-data .specs .date {
       text-align: right;
       color: gray;
-      margin-bottom: 10px; }
-    .cache-data .specs .cache-type, .cache-data .specs .findabiliy {
       margin-bottom: 15px; }
+    .cache-data .specs .cache-type, .cache-data .specs .findabiliy, .cache-data .specs .distance {
+      margin-bottom: 10px; }
+    .cache-data .specs i[class*="star"] {
+      color: #fcbf40; }
     .cache-data .specs .icon-cache {
       display: inline-block;
       height: 12px;
@@ -582,6 +585,16 @@ body {
       .cache-data .specs .icon-cache.green {
         background: url("../images/cache_green.png") !important;
         background-size: 100% !important; }
+    .cache-data .specs .distance .icon-direction {
+      display: inline-block;
+      height: 12px;
+      width: 10px;
+      margin-right: 8px;
+      background: url("../images/distance.png") !important;
+      background-size: 100% !important;
+      background-repeat: no-repeat; }
+    .cache-data .specs .distance h2 {
+      display: inline-block; }
   .cache-data .description {
     margin: 35px 0; }
   .cache-data .save-cache-btn, .cache-data .goto-cache-btn {
