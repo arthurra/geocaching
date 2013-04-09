@@ -570,7 +570,6 @@ body {
     float: right; }
     .cache-data .specs .date {
       text-align: right;
-      text-transform: uppercase;
       color: gray;
       margin-bottom: 10px; }
     .cache-data .specs .cache-type, .cache-data .specs .findabiliy {
@@ -801,10 +800,12 @@ body {
 /*         SAVED CACHES          */
 /*------------------------------- */
 .saved-caches {
-  box-shadow: 0 0 15px rgba(0, 0, 0, 0.35); }
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.35);
+  background: rgba(0, 0, 0, 0.15); }
   .saved-caches .cache-header {
+    padding-left: 10px;
     box-shadow: 0 0 0 transparent !important;
-    margin-bottom: 3px; }
+    margin-bottom: 5px; }
     .saved-caches .cache-header .cache-info {
       width: 100%; }
       .saved-caches .cache-header .cache-info .menu-btn {
@@ -815,7 +816,8 @@ body {
 .search {
   display: block;
   width: 100%;
-  padding: 10px 0 10px 10px;
+  padding: 5px;
+  padding-right: 0 !important;
   margin: 25px 0;
   background: white;
   box-shadow: 0 0 15px rgba(0, 0, 0, 0.35); }
@@ -827,11 +829,11 @@ body {
     line-height: 0;
     height: 0; }
   .search .search-btn {
-    width: 20%;
+    width: 60px;
+    height: 55px;
     display: inline-block;
     float: right;
     border-left: 1px solid #dcddde;
-    height: 55px;
     text-align: center;
     font-size: 16pt;
     padding-top: 18px;
@@ -839,10 +841,11 @@ body {
   .search input {
     display: inline-block;
     float: left;
-    height: 55px;
+    height: 45px;
     width: 75%;
     line-height: 40px;
-    font-size: 24px; }
+    font-size: 24px;
+    margin: 5px; }
     .search input:focus {
       outline: 0; }
 
@@ -904,7 +907,8 @@ body {
   -webkit-transition: all 0.3s; }
   .log .cache-adv-log .cache-map .map {
     position: relative;
-    background: gray;
+    background: url("../images/log_map.png");
+    background-size: 100%;
     width: 100%;
     height: 100%;
     opacity: 1;

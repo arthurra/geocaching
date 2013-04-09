@@ -649,7 +649,7 @@ body
     float: right
     .date
       text-align: right
-      text-transform: uppercase
+      //text-transform: uppercase
       color: gray
       margin-bottom: 10px
     .cache-type, .findabiliy
@@ -873,9 +873,11 @@ body
       
 .saved-caches
   box-shadow: 0 0 15px rgba(0,0,0,0.35)
+  background: rgba(0,0,0,0.15)
   .cache-header
+    padding-left: 10px
     box-shadow: 0 0 0 transparent !important
-    margin-bottom: 3px
+    margin-bottom: 5px
     //border-bottom: 1 px solid #dcddde
     .cache-info
       width: 100%
@@ -887,16 +889,17 @@ body
 .search
   @include clearfix
   width: 100%
-  padding: 10px 0 10px 10px
+  padding: 5px
+  padding-right: 0 !important
   margin: 25px 0
   background: #fff
   box-shadow: 0 0 15px rgba(0,0,0,0.35)
   .search-btn
-    width: 20%
+    width: 60px
+    height: 55px
     display: inline-block
     float: right
     border-left: 1px solid #dcddde
-    height: 55px
     text-align: center
     font-size: 16pt
     padding-top: 18px
@@ -904,10 +907,11 @@ body
   input
     display: inline-block
     float: left
-    height: 55px
+    height: 45px
     width: 75%
     line-height: 40px
     font-size: 24px
+    margin: 5px
     &:focus
       outline: 0
 
@@ -981,7 +985,8 @@ body
       -webkit-transition: all 0.3s
       .map
         position: relative
-        background: gray
+        background: url("../images/log_map.png")
+        background-size: 100%
         width: 100%
         height: 100%
         opacity: 1
