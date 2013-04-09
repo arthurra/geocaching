@@ -110,7 +110,19 @@ h1 {
 h2 {
   color: #58595b;
   font-size: 12pt;
+  margin: 0; }
+
+h3 {
+  color: #88af33;
+  margin: 0;
   font-style: italic;
+  font-size: 22px; }
+
+h5 {
+  color: #88af33;
+  font-weight: bold;
+  text-transform: uppercase;
+  font-size: 14px;
   margin: 0; }
 
 /*------------------------------- */
@@ -252,7 +264,7 @@ body {
   box-shadow: 0 0 15px rgba(0, 0, 0, 0.35); }
   .header h1 {
     display: inline-block;
-    margin: 15px 0 7px 0;
+    margin: 10px 0 6px 0;
     color: #88af33; }
 
 .menu-btn {
@@ -394,7 +406,6 @@ body {
             color: #58595b;
             text-shadow: 0 1px 50px white, 0 1px 50px white, 0 1px 0 rgba(255, 255, 255, 0.75); }
           .menu-container .dividers table tr td .sub-btn h2 {
-            font-weight: bold;
             margin-top: 10px;
             color: #58595b;
             text-shadow: 0 1px 50px white, 0 1px 0 white; }
@@ -557,6 +568,10 @@ body {
     padding-left: 5px;
     width: 48%;
     float: right; }
+    .cache-data .specs .date {
+      text-align: right;
+      color: gray;
+      margin-bottom: 10px; }
     .cache-data .specs .cache-type, .cache-data .specs .findabiliy {
       margin-bottom: 15px; }
     .cache-data .specs .icon-cache {
@@ -579,6 +594,7 @@ body {
       font-weight: bold; }
   .cache-data .save-cache-btn {
     margin-right: 2%;
+    padding: 15px 0;
     border: 1px solid #88af33;
     background: #e2edce;
     background: -moz-linear-gradient(top, #e2edce 0%, #cee1ae 100%);
@@ -588,11 +604,16 @@ body {
     background: -ms-linear-gradient(top, #e2edce 0%, #cee1ae 100%);
     background: linear-gradient(to bottom, #e2edce 0%, #cee1ae 100%);
     filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#e2edce', endColorstr='#cee1ae',GradientType=0 ); }
-    .cache-data .save-cache-btn h3 {
+    .cache-data .save-cache-btn h4 {
       color: #88af33;
+      font-size: 18px;
+      font-weight: bold;
+      text-transform: uppercase;
+      margin: 0;
       text-shadow: 0 1px 1px rgba(255, 255, 255, 0.75); }
   .cache-data .goto-cache-btn {
     color: #e6e7e8;
+    padding: 15px 0;
     border: 1px solid black;
     background: #6e6f72;
     background: -moz-linear-gradient(top, #6e6f72 1%, #424344 100%);
@@ -602,10 +623,21 @@ body {
     background: -ms-linear-gradient(top, #6e6f72 1%, #424344 100%);
     background: linear-gradient(to bottom, #6e6f72 1%, #424344 100%);
     filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#6e6f72', endColorstr='#424344',GradientType=0 ); }
+    .cache-data .goto-cache-btn h4 {
+      color: lightgrey;
+      font-size: 18px;
+      font-weight: bold;
+      text-transform: uppercase;
+      margin: 0;
+      text-shadow: 0 -1px 1px rgba(0, 0, 0, 0.75); }
 
 /*------------------------------- */
 /*          CACHE LOG            */
 /*------------------------------- */
+.hidden {
+  opacity: 0 !important;
+  left: -10px !important; }
+
 .cache-log {
   display: block;
   width: 100%;
@@ -630,13 +662,20 @@ body {
       visibility: hidden;
       line-height: 0;
       height: 0; }
+    .cache-log header h5 {
+      position: relative;
+      left: 0;
+      opacity: 1;
+      -webkit-transition: all 0.3s; }
     .cache-log header h1 {
       position: relative;
-      top: 15px;
+      left: 0;
+      top: -5px;
       color: #58595b;
       display: inline-block;
-      margin: 0px 15px 25px 0px;
-      z-index: 1; }
+      z-index: 1;
+      opacity: 1;
+      -webkit-transition: all 0.3s; }
     .cache-log header .cache-stats {
       position: relative;
       top: 10px; }
@@ -716,7 +755,7 @@ body {
       .cache-log header .log-cache-slider h1 {
         color: white;
         position: absolute;
-        top: 15px;
+        top: 12px;
         left: -50px;
         width: 250px;
         opacity: 0;
@@ -724,23 +763,32 @@ body {
         -webkit-transition: all 0.6s;
         -webkit-transition-delay: 0.4s;
         z-index: 1; }
-      .cache-log header .log-cache-slider:hover {
+      .cache-log header .log-cache-slider.slide {
         width: 342px;
         box-shadow: 0 0 5px rgba(0, 0, 0, 0.2) inset;
         background: #cddcec; }
-        .cache-log header .log-cache-slider:hover .btn {
+        .cache-log header .log-cache-slider.slide .btn {
           box-shadow: 0 0 5px 2px rgba(0, 0, 0, 0.1); }
-        .cache-log header .log-cache-slider:hover h1 {
+        .cache-log header .log-cache-slider.slide h1 {
           opacity: 1;
           left: 75px; }
   .cache-log .user-post {
+    position: relative;
     margin-top: 15px;
     padding: 10px;
     box-shadow: 0 0 5px rgba(0, 0, 0, 0.25); }
     .cache-log .user-post .user-name {
       font-size: 18px;
       margin-bottom: 0px;
-      color: gray; }
+      color: gray;
+      text-transform: uppercase;
+      display: inline-block; }
+    .cache-log .user-post .post-date {
+      display: inline-block;
+      position: absolute;
+      right: 0;
+      color: gray;
+      margin-right: 10px; }
     .cache-log .user-post p {
       font-size: 14px;
       margin: 5px 0; }
@@ -755,6 +803,8 @@ body {
   .saved-caches .cache-header {
     box-shadow: 0 0 0 transparent !important;
     margin-bottom: 3px; }
+    .saved-caches .cache-header h1 {
+      font-weight: normal; }
 
 .search {
   display: block;

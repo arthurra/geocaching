@@ -19,5 +19,11 @@ $(document).ready(function() {
   $('div.cache-adv-log').click(function() {
     $(this).toggleClass('closed');
   });
+
+  $('div.log-cache-slider').click(function() {
+    $(this).toggleClass('slide');
+    $('div.cache-log header > h5').toggleClass('hidden');
+    $('div.cache-log header > h1').toggleClass('hidden');
+  });
   
 });
