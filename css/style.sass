@@ -313,6 +313,7 @@ body
   z-index: -1
   background: #d8e7be
   opacity: 0.75
+  -webkit-transition: opacity 0.6s
 
 
 /*-------------------------------*/
@@ -885,10 +886,16 @@ body
 /*-------------------------------*/
 /*         SAVED CACHES          */
 /*-------------------------------*/
-      
+
+
+.header
+  position: relative
+
 .saved-caches
   box-shadow: 0 0 15px rgba(0,0,0,0.35)
   background: rgba(0,0,0,0.15)
+  position: relative
+  -webkit-transition: top 0.3s, opacity 0.6s
   .cache-header
     padding-left: 10px
     box-shadow: 0 0 0 transparent !important
@@ -900,15 +907,20 @@ body
         position: absolute
         top: 5px
         right: 0
+  &.search-mode
+    .cache-header
+      opacity: 0.5
 
 .search
   @include clearfix
+  position: relative
   width: 100%
   padding: 5px
   padding-right: 0 !important
   margin: 25px 0
   background: #fff
   box-shadow: 0 0 15px rgba(0,0,0,0.35)
+  -webkit-transition: top 0.3s
   .search-btn
     width: 60px
     height: 55px
@@ -929,6 +941,12 @@ body
     margin: 5px
     &:focus
       outline: 0
+
+.search-mode
+  top: -90px
+
+.canvas-overlay.search-mode
+  opacity: 1
 
 
 /*-------------------------------*/

@@ -25,5 +25,12 @@ $(document).ready(function() {
     $('div.cache-log header > h5').toggleClass('hidden');
     $('div.cache-log header > h1').toggleClass('hidden');
   });
+
+  $('div.search').click(function() {
+    $('div.header').toggleClass('search-mode');
+    $('div.search').toggleClass('search-mode');
+    $('div.saved-caches').toggleClass('search-mode');
+    $('div.canvas-overlay').toggleClass('search-mode');
+  });
   
 });

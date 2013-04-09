@@ -248,7 +248,8 @@ body {
   top: -15px;
   z-index: -1;
   background: #d8e7be;
-  opacity: 0.75; }
+  opacity: 0.75;
+  -webkit-transition: opacity 0.6s; }
 
 /*------------------------------- */
 /*            HEADER             */
@@ -812,9 +813,14 @@ body {
 /*------------------------------- */
 /*         SAVED CACHES          */
 /*------------------------------- */
+.header {
+  position: relative; }
+
 .saved-caches {
   box-shadow: 0 0 15px rgba(0, 0, 0, 0.35);
-  background: rgba(0, 0, 0, 0.15); }
+  background: rgba(0, 0, 0, 0.15);
+  position: relative;
+  -webkit-transition: top 0.3s, opacity 0.6s; }
   .saved-caches .cache-header {
     padding-left: 10px;
     box-shadow: 0 0 0 transparent !important;
@@ -825,15 +831,19 @@ body {
         position: absolute;
         top: 5px;
         right: 0; }
+  .saved-caches.search-mode .cache-header {
+    opacity: 0.5; }
 
 .search {
   display: block;
+  position: relative;
   width: 100%;
   padding: 5px;
   padding-right: 0 !important;
   margin: 25px 0;
   background: white;
-  box-shadow: 0 0 15px rgba(0, 0, 0, 0.35); }
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.35);
+  -webkit-transition: top 0.3s; }
   .search:after {
     content: ".";
     display: block;
@@ -861,6 +871,12 @@ body {
     margin: 5px; }
     .search input:focus {
       outline: 0; }
+
+.search-mode {
+  top: -90px; }
+
+.canvas-overlay.search-mode {
+  opacity: 1; }
 
 /*------------------------------- */
 /*        ADVENTURE LOG          */
