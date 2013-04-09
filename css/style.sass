@@ -649,6 +649,7 @@ body
     float: right
     .date
       text-align: right
+      text-transform: uppercase
       color: gray
       margin-bottom: 10px
     .cache-type, .findabiliy
@@ -842,28 +843,28 @@ body
         h1
           opacity: 1
           left: 75px
-  .user-post
-    position: relative
-    margin-top: 15px
-    padding: 10px
-    box-shadow: 0 0 5px rgba(0,0,0,0.25)
-    .user-name
-      font-size: 18px
-      margin-bottom: 0px
-      color: gray
-      text-transform: uppercase
-      display: inline-block
-    .post-date
-      display: inline-block
-      position: absolute
-      right: 0
-      color: gray
-      margin-right: 10px
-    p 
-      font-size: 14px
-      margin: 5px 0
-    &.found
-      border-left: 5px solid $green
+.user-post
+  position: relative
+  margin-top: 15px
+  padding: 10px
+  box-shadow: 0 0 5px rgba(0,0,0,0.25)
+  .user-name
+    font-size: 18px
+    margin-bottom: 0px
+    color: gray
+    text-transform: uppercase
+    display: inline-block
+  .post-date
+    display: inline-block
+    position: absolute
+    right: 0
+    color: gray
+    margin-right: 10px
+  p 
+    font-size: 14px
+    margin: 5px 0
+  &.found
+    border-left: 5px solid $green
 
 
 /*-------------------------------*/
@@ -876,8 +877,12 @@ body
     box-shadow: 0 0 0 transparent !important
     margin-bottom: 3px
     //border-bottom: 1 px solid #dcddde
-    h1
-      font-weight: normal
+    .cache-info
+      width: 100%
+      .menu-btn
+        position: absolute
+        top: 5px
+        right: 0
 
 .search
   @include clearfix
@@ -933,10 +938,6 @@ body
   .start
     margin: -1px auto 50px
   .cache-adv-log
-    .date
-      text-align: center
-      font-style: italic
-      font-size: 14px
     .cache-name
       position: relative
       padding: 10px
@@ -945,8 +946,18 @@ body
       z-index: 100
       h3
         color: $green
-        margin: 5px 0
+        margin: 0
         font-style: italic
+      .date
+        //text-transform: uppercase
+        //text-align: center
+        //font-style: italic
+        font-size: 14px
+        color: gray
+        float: right
+        //position: absolute
+        //top: 10px
+        //left: 10px
       .icon-cache
         display: inline-block
         height: 12px
@@ -963,30 +974,58 @@ body
       background: #fff
       box-shadow: 0 0 10px rgba(0,0,0,0.15)
       height: 200px
-      margin: 0 10px
+      //margin: 0 10px
       padding: 10px
       z-index: 75
       overflow: hidden
       -webkit-transition: all 0.3s
       .map
+        position: relative
         background: gray
         width: 100%
         height: 100%
+        opacity: 1
+        -webkit-transition: all 0.3s
+        //-webkit-transition-delay: 0.3s
     .cache-description
       position: relative
       background: #fff
       box-shadow: 0 0 10px rgba(0,0,0,0.15)
-      margin: 0 20px
+      //margin: 0 20px
       z-index: 50
       padding: 10px
       overflow: hidden
       -webkit-transition: all 0.3s
       p
+        position: relative
         margin: 0
+        opacity: 1
+        -webkit-transition: all 0.6s
+        -webkit-transition-delay: 0.3s
+      .user-post
+        position: relative
+        opacity: 1
+        -webkit-transition: all 0.6s
+        -webkit-transition-delay: 0.4s
     &.closed
       .cache-map, .cache-description
         height: 50px
-        margin-top: -45px
+        margin-top: -45px !important
+      .cache-map
+        margin: 0 10px
+        .map
+          //top: -15px
+          opacity: 0
+      .cache-description
+        margin: 0 20px
+        & > p
+          top: -15px
+          opacity: 0
+        .user-post
+          opacity: 0
+    &.found
+      .cache-name
+        border-left: 5px solid $green 
 
 
 
