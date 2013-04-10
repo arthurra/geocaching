@@ -157,25 +157,27 @@ h5 {
 #menu {
   display: block;
   width: 100%;
-  height: 100%;
-  position: fixed;
-  top: 0;
+  height: 600px;
+  position: absolute;
+  top: -583px;
   right: 0;
   background: #d8e7be;
   color: #58595b;
-  padding: 15px;
-  z-index: 0; }
-  #menu.open + #main {
-    top: 80%; }
-  #menu.open .header {
-    top: 0;
-    opacity: 1;
-    box-shadow: 0 0 20px rgba(0, 0, 0, 0.25); }
-  #menu.open ul li {
-    opacity: 1;
-    top: 0 !important;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.15);
-    -webkit-transform: rotateX(0deg); }
+  padding: 0;
+  z-index: 5000; }
+  #menu.open {
+    padding: 15px; }
+    #menu.open + #main {
+      top: 600; }
+    #menu.open .header {
+      top: 0;
+      opacity: 1;
+      box-shadow: 0 0 20px rgba(0, 0, 0, 0.25); }
+    #menu.open ul li {
+      opacity: 1;
+      top: 0 !important;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.15);
+      -webkit-transform: rotateX(0deg); }
   #menu .header {
     opacity: 0;
     position: relative;
@@ -248,7 +250,7 @@ h5 {
   float: left;
   margin: 0;
   padding: 30px 15px 25px;
-  z-index: 5000;
+  z-index: 1000;
   -webkit-transition: top 0.5s;
   -moz-transition: top 0.5s;
   overflow: auto; }
@@ -259,7 +261,7 @@ h5 {
 .menu-slider {
   display: block;
   position: absolute;
-  top: 0;
+  bottom: 0;
   left: 0;
   width: 100%;
   height: 18px;
@@ -282,7 +284,7 @@ h5 {
   .menu-slider .groove {
     display: block;
     top: 0;
-    margin: 2px auto;
+    margin: 3px auto;
     width: 3em;
     height: 10px;
     border-radius: 10px;
