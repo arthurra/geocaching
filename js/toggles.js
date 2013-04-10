@@ -14,9 +14,9 @@ $(document).ready(function() {
     $('div#menu').toggleClass('open');
   });
 
-  $('div.menu-slider').click(function() {
-    $('div#menu').toggleClass('open');
-  });
+  // $('div.menu-slider').click(function() {
+  //   $('div#menu').toggleClass('open');
+  // });
 
   // if ("div#menu.open") {
   //   $('#main').click(function() {
