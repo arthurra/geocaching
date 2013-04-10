@@ -961,7 +961,7 @@ body {
   .log .cache-adv-log .cache-name h3 {
     color: #88af33;
     margin: 0;
-    font-style: italic; }
+    font-style: normal; }
   .log .cache-adv-log .cache-name .date {
     font-size: 14px;
     color: gray;
@@ -1025,9 +1025,9 @@ body {
 .log .cache-adv-log.closed .cache-description {
   margin: 0 20px; }
   .log .cache-adv-log.closed .cache-description > p {
-    top: -15px;
     opacity: 0; }
   .log .cache-adv-log.closed .cache-description .user-post {
+    top: -15px;
     opacity: 0; }
 .log .cache-adv-log.found .cache-name {
   border-left: 5px solid #88af33; }
