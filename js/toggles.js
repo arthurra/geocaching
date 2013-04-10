@@ -12,6 +12,20 @@ $(document).ready(function() {
     $('div#menu').toggleClass('open');
   });
 
+  $('div.menu-slider').click(function() {
+    $('div#menu').toggleClass('open');
+  });
+
+  // if ("div#menu.open") {
+  //   $('#main').click(function() {
+  //     $('div#menu').removeClass('open');
+  //   });
+  // };
+
+  $('div#main .header').click(function() {
+    $('div#menu').removeClass('open');
+  });
+
   $('div.map-btn').click(function() {
     $('div#menu').toggleClass('open');
   });
