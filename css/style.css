@@ -41,6 +41,32 @@ a {
   100% {
     top: 0; } }
 
+@-webkit-keyframes rotate-pointer {
+  0% {
+    -webkit-transform: rotate(45deg); }
+
+  30% {
+    -webkit-transform: rotate(-55deg); }
+
+  70% {
+    -webkit-transform: rotate(125deg); }
+
+  100% {
+    -webkit-transform: rotate(45deg); } }
+
+@-webkit-keyframes rotate-compass {
+  0% {
+    -webkit-transform: rotate(0deg); }
+
+  30% {
+    -webkit-transform: rotate(-100deg); }
+
+  70% {
+    -webkit-transform: rotate(80deg); }
+
+  100% {
+    -webkit-transform: rotate(0deg); } }
+
 /*------------------------------- */
 /*            COLORS             */
 /*------------------------------- */
@@ -432,7 +458,8 @@ body {
   .menu-container .dividers {
     position: relative;
     overflow: hidden;
-    border-radius: 50%; }
+    border-radius: 50%;
+    -webkit-transition: opacity 0.3s; }
     .menu-container .dividers table {
       width: 100%;
       height: 100%;
@@ -566,7 +593,8 @@ body {
     width: 230px;
     background-image: url(/images/compass.png);
     background-size: 100%;
-    background-repeat: no-repeat; }
+    background-repeat: no-repeat;
+    -webkit-animation: rotate-compass 10s infinite; }
   .compass-container .arrow {
     position: absolute;
     left: 57px;
@@ -577,7 +605,8 @@ body {
     background-size: 100%;
     background-repeat: no-repeat;
     -webkit-transform: rotate(45deg);
-    -webkit-transform-origin: 50% 59%; }
+    -webkit-transform-origin: 50% 57.55%;
+    -webkit-animation: rotate-pointer 10s infinite; }
   .compass-container .new-post-btn {
     position: absolute;
     top: 83px;
@@ -701,6 +730,9 @@ body {
 /*          CACHE LOG            */
 /*------------------------------- */
 .hidden {
+  opacity: 0; }
+
+.slide-hidden {
   opacity: 0 !important;
   left: -10px !important; }
 

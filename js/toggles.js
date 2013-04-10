@@ -2,10 +2,12 @@ $(document).ready(function() {
 
   $('div.new-post-btn').click(function() {
     $('div.compass-container').toggleClass('open');
+    $('div.menu-container .dividers').toggleClass('hidden');
   });
 
   $('div.back-btn').click(function() {
     $('div.compass-container').toggleClass('open');
+    $('div.menu-container .dividers').toggleClass('hidden');
   });
 
   $('div.menu-btn').click(function() {
@@ -36,8 +38,8 @@ $(document).ready(function() {
 
   $('div.log-cache-slider').click(function() {
     $(this).toggleClass('slide');
-    $('div.cache-log header > h5').toggleClass('hidden');
-    $('div.cache-log header > h1').toggleClass('hidden');
+    $('div.cache-log header > h5').toggleClass('slide-hidden');
+    $('div.cache-log header > h1').toggleClass('slide-hidden');
   });
 
   $('div.search').click(function() {
