@@ -45,11 +45,11 @@ function initialize() {
                                        position.coords.longitude);
 
 
-      var marker = new google.maps.Marker({
-        position: pos,
-        icon: locMarker,
-        map: map
-      });
+      // var marker = new google.maps.Marker({
+      //   position: pos,
+      //   icon: locMarker,
+      //   map: map
+      // });
 
       var markerStart = new google.maps.Marker({
         position: pos,

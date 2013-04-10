@@ -12,6 +12,9 @@ ul {
 a {
   text-decoration: none; }
 
+::-webkit-scrollbar {
+  display: none; }
+
 /*------------------------------- */
 /*          ANIMATIONS           */
 /*------------------------------- */
@@ -378,8 +381,8 @@ body {
   .cache-header .cache-info {
     display: inline-block;
     float: left; }
-    .cache-header .cache-info h1 {
-      margin-bottom: 5px; }
+    .cache-header .cache-info h3 {
+      font-style: normal; }
     .cache-header .cache-info .cache-type {
       display: inline-block;
       margin-right: 5px; }
@@ -637,6 +640,7 @@ body {
 /*          CACHE INFO           */
 /*------------------------------- */
 .cache-data {
+  position: relative;
   width: 100%;
   background: white;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.25);
@@ -672,12 +676,24 @@ body {
       display: inline-block;
       height: 12px;
       width: 10px;
-      margin-right: 8px;
+      margin-right: 10px;
       background: url("../images/distance.png") !important;
       background-size: 100% !important;
       background-repeat: no-repeat; }
     .cache-data .specs .distance h2 {
       display: inline-block; }
+    .cache-data .specs .findabiliy .icon-screenshot {
+      margin-right: 8px;
+      width: 18px;
+      color: #84a7d0; }
+    .cache-data .specs .terrain .icon-terrain {
+      display: inline-block;
+      height: 12px;
+      width: 18px;
+      margin-right: 5px;
+      background: url("../images/terrain.png") !important;
+      background-size: 100%;
+      background-repeat: no-repeat; }
   .cache-data .description {
     margin: 35px 0; }
   .cache-data .save-cache-btn, .cache-data .goto-cache-btn {
@@ -739,6 +755,7 @@ body {
 
 .cache-log {
   display: block;
+  position: relative;
   width: 100%;
   background: white;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.25);
@@ -1064,3 +1081,5 @@ body {
     opacity: 0; }
 .log .cache-adv-log.found .cache-name {
   border-left: 5px solid #88af33; }
+.log .cache-adv-log.not-found .cache-name {
+  border-left: 5px solid #bc4d4d; }
