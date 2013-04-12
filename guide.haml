@@ -1,0 +1,100 @@
+%html
+  %head
+    %title
+      Compass
+    %link{:href => "css/style.css", :rel => "stylesheet"}
+    / %link{:href => "css/icons.css", :rel => "stylesheet"}
+    %link{:href => "http://netdna.bootstrapcdn.com/font-awesome/3.0/css/font-awesome.css", :rel => "stylesheet"}
+    %script{:src => "http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"}
+    %script{:src => "https://maps.googleapis.com/maps/api/js?key=AIzaSyCf1oFgc6RXllTWFTc2gWZJazqkP2IoCQg&sensor=true"}
+
+    %script{:src => "http://ajax.googleapis.com/ajax/libs/jqueryui/1.10.2/jquery-ui.min.js"}
+    %script{:src => "js/jquery.ui.touch-punch.min.js"}
+    %script{:src => "js/slide-ck.js"}
+    
+  %body
+    #menu
+      .header
+        %h1 Menu
+      %ul
+        %li 
+          %a{:href => "nearby.html"}
+            %i.icon-screenshot
+            %h2 Nearby Caches
+        %li 
+          %a{:href => "saved_caches.html"}
+            %i.icon-cloud-download
+            %h2 Saved Caches
+        %li 
+          %i.icon-search
+          %h2 Search
+        %li 
+          %a{:href => "adventure_log.html"}
+            %i.icon-pencil
+            %h2 Log
+        %li 
+          %i.icon-book
+          %h2 Field Guide
+        %li 
+          %i.icon-cogs
+          %h2 Settings
+      .menu-slider
+        .groove
+          %h3 •••
+    #main
+      #map-canvas
+      .canvas-overlay
+      .header
+        %h1 Field Guide
+      .search
+        %input{:type => "text", :placeholder => "search"}
+        .search-btn
+          %i.icon-search
+      .local-guide
+        .location
+          %i.icon-map-marker
+          %h2 Cicinnati, OH
+        .map
+          %img{:src => "../images/cincimap.png"}
+      .guide-menu
+        %ul
+          %li 
+            %a{:href => "nearby.html"}
+              %i.icon-screenshot
+              %h2 Plants
+          %li 
+            %a{:href => "saved_caches.html"}
+              %i.icon-cloud-download
+              %h2 Mammals
+          %li 
+            %i.icon-search
+            %h2 Birds
+          %li 
+            %a{:href => "adventure_log.html"}
+              %i.icon-pencil
+              %h2 Insects
+          %li 
+            %i.icon-book
+            %h2 Reptiles
+          %li 
+            %i.icon-cogs
+            %h2 Amphib.
+          %li 
+            %i.icon-cogs
+            %h2 Fish
+          %li 
+            %i.icon-cogs
+            %h2 Other
+      
+
+  %script{:src => "/js/toggles-ck.js"}
+  %script{:src => "/js/map_controls-ck.js"}
+
+
+
+
+
+
+
+
+
