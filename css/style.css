@@ -1120,7 +1120,9 @@ body {
     margin: 5px 0;
     overflow: hidden; }
     .local-guide .map img {
-      height: 100%; }
+      position: relative;
+      height: 100%;
+      left: -35px; }
 
 .guide-menu {
   position: relative; }
