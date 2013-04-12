@@ -1,0 +1,78 @@
+%html
+  %head
+    %title
+      Compass
+    %link{:href => "css/style.css", :rel => "stylesheet"}
+    / %link{:href => "css/icons.css", :rel => "stylesheet"}
+    %link{:href => "http://netdna.bootstrapcdn.com/font-awesome/3.0/css/font-awesome.css", :rel => "stylesheet"}
+    %script{:src => "http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"}
+    %script{:src => "https://maps.googleapis.com/maps/api/js?key=AIzaSyCf1oFgc6RXllTWFTc2gWZJazqkP2IoCQg&sensor=true"}
+
+    %script{:src => "http://ajax.googleapis.com/ajax/libs/jqueryui/1.10.2/jquery-ui.min.js"}
+    %script{:src => "js/jquery.ui.touch-punch.min.js"}
+    %script{:src => "js/slide-ck.js"}
+    
+  %body
+    #menu
+      .header
+        %h1 Menu
+      %ul
+        %li 
+          %a{:href => "nearby.html"}
+            %i.icon-screenshot
+            %h2 Nearby Caches
+        %li 
+          %a{:href => "saved_caches.html"}
+            %i.icon-cloud-download
+            %h2 Saved Caches
+        %li 
+          %i.icon-search
+          %h2 Search
+        %li 
+          %a{:href => "adventure_log.html"}
+            %i.icon-pencil
+            %h2 Log
+        %li 
+          %i.icon-book
+          %h2 Field Guide
+        %li 
+          %i.icon-cogs
+          %h2 Settings
+      .menu-slider
+        .groove
+          %h3 •••
+    #main
+      #map-canvas
+      .canvas-overlay
+      .header
+        %h1 Field Guide
+      .guide-entry
+        .photos
+          %img{:src => "../images/deer.jpg"}
+          .markers
+            %i.icon-circle-blank
+            %i.icon-circle-blank
+            %i.icon-circle
+            %i.icon-circle-blank
+            %i.icon-circle-blank
+        .info
+          %h1.name White Tailed Deer
+          %p The deer's coat is a reddish-brown in the spring and summer and turns to a grey-brown throughout the fall and winter. The deer can be recognized by the characteristic white underside to its tail, which it shows as a signal of alarm by raising the tail during escape.
+          .photo-btn
+            %h4 Take a Photo
+          .log-btn
+            %h4 Add to the Log
+      
+      
+
+  %script{:src => "/js/toggles-ck.js"}
+  %script{:src => "/js/map_controls-ck.js"}
+
+
+
+
+
+
+
+
+

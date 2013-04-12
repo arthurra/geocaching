@@ -1141,3 +1141,68 @@ body {
     .guide-menu ul li a {
       display: block;
       color: #58595b; }
+
+/*------------------------------- */
+/*          FIELD GUIDE          */
+/*------------------------------- */
+.guide-entry {
+  position: relative;
+  background: white;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.35); }
+  .guide-entry .photos img {
+    width: 100%; }
+  .guide-entry .photos .markers {
+    display: block;
+    text-align: center;
+    font-size: 8px;
+    margin-top: 5px;
+    color: #58595b; }
+  .guide-entry .info {
+    padding: 10px;
+    margin-top: 15px; }
+    .guide-entry .info h1 {
+      font-size: 18px; }
+    .guide-entry .info p {
+      margin-top: 5px;
+      margin-bottom: 40px; }
+  .guide-entry .photo-btn {
+    display: block;
+    width: 100%;
+    padding: 15px 0;
+    text-align: center;
+    margin-bottom: 15px;
+    border: 1px solid #88af33;
+    background: #e2edce;
+    background: -moz-linear-gradient(top, #e2edce 0%, #cee1ae 100%);
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #e2edce), color-stop(100%, #cee1ae));
+    background: -webkit-linear-gradient(top, #e2edce 0%, #cee1ae 100%);
+    background: -o-linear-gradient(top, #e2edce 0%, #cee1ae 100%);
+    background: -ms-linear-gradient(top, #e2edce 0%, #cee1ae 100%);
+    background: linear-gradient(to bottom, #e2edce 0%, #cee1ae 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#e2edce', endColorstr='#cee1ae',GradientType=0 ); }
+    .guide-entry .photo-btn h4 {
+      color: #88af33;
+      text-shadow: 0 1px 1px rgba(255, 255, 255, 0.75); }
+  .guide-entry .log-btn {
+    display: block;
+    width: 100%;
+    padding: 15px 0;
+    text-align: center;
+    border: 1px solid #648bb8;
+    background: #cddcec;
+    background: -moz-linear-gradient(top, #cddcec 0%, #84a7d0 100%);
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #cddcec), color-stop(100%, #84a7d0));
+    background: -webkit-linear-gradient(top, #cddcec 0%, #84a7d0 100%);
+    background: -o-linear-gradient(top, #cddcec 0%, #84a7d0 100%);
+    background: -ms-linear-gradient(top, #cddcec 0%, #84a7d0 100%);
+    background: linear-gradient(to bottom, #cddcec 0%, #84a7d0 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#cddcec', endColorstr='#84a7d0',GradientType=0 ); }
+    .guide-entry .log-btn h4 {
+      color: white;
+      text-shadow: 0 -1px 1px rgba(0, 0, 0, 0.15); }
+  .guide-entry h4 {
+    color: #88af33;
+    font-size: 18px;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin: 0; }
