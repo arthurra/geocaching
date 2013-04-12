@@ -1147,20 +1147,35 @@ body
       box-shadow: 0 0 10px rgba(0,0,0,0.15)
       //margin: 0 20px
       z-index: 50
-      padding: 10px
+      padding: 25px 10px 0px
       overflow: hidden
       -webkit-transition: all 0.3s
       p
         position: relative
-        margin: 0
+        margin: 5px 0
         opacity: 1
         -webkit-transition: all 0.6s
         -webkit-transition-delay: 0.3s
       .user-post
         position: relative
+        margin: 25px 0
         opacity: 1
         -webkit-transition: all 0.6s
         -webkit-transition-delay: 0.4s
+      .media
+        margin: 0 -10px
+        padding: 10px
+        background: #efebe2
+        .post
+          display: block
+          width: 100%
+          margin: 15px 0 25px
+          h2
+            font-weight: bold
+            text-transform: uppercase
+            margin-bottom: 5px
+          img
+            width: 100%
     &.closed
       .cache-map, .cache-description
         height: 50px
@@ -1187,6 +1202,49 @@ body
         border-left: 5px solid $red 
 
 
+/*-------------------------------*/
+/*          FIELD GUIDE          */
+/*-------------------------------*/
+
+
+.local-guide
+  position: relative
+  padding: 10px
+  margin-bottom: 25px
+  background: #fff
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.35)
+  .location
+    i
+      font-size: 20px
+      color: $dark-gray
+    h2
+      display: inline-block
+  .map
+    position: relative
+    height: 200px
+    background: lightgray
+    margin: 5px 0
+    overflow: hidden
+    img
+      height: 100%
+
+.guide-menu
+  position: relative
+  ul li 
+    position: relative
+    color: $dark-gray
+    padding: 15px 0 10px
+    background: #fff
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.35)
+    display: inline-block
+    text-align: center
+    width: 48%
+    margin: 0 3% 15px 0
+    &:nth-child(2n)
+      margin-right: 0
+    a
+      display: block
+      color: $dark-gray
 
 
 
