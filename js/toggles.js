@@ -49,6 +49,8 @@ $(document).ready(function() {
     $('div.header').toggleClass('search-mode');
     $('div.search').toggleClass('search-mode');
     $('div.saved-caches').toggleClass('search-mode');
+    $('div.local-guide').toggleClass('search-mode');
+    $('div.guide-menu').toggleClass('search-mode');
     $('div.canvas-overlay').toggleClass('search-mode');
   });
 

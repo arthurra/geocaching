@@ -1187,9 +1187,11 @@ body
         position: absolute
         top: 5px
         right: 0
-  &.search-mode
-    .cache-header
-      opacity: 0.5
+.search-mode
+  .cache-header
+    opacity: 0.5
+  &.local-guide, &.guide-menu
+    opacity: 0
 
 .search
   @include clearfix
@@ -1379,6 +1381,7 @@ body
   margin-bottom: 25px
   background: #fff
   box-shadow: 0 2px 2px rgba(0, 0, 0, 0.25)
+  -webkit-transition: opacity 0.5s
   .location
     i
       font-size: 20px
@@ -1398,6 +1401,7 @@ body
 
 .guide-menu
   position: relative
+  -webkit-transition: opacity 0.5s
   ul li 
     position: relative
     color: $dark-gray
