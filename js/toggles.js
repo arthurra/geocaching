@@ -51,5 +51,9 @@ $(document).ready(function() {
     $('div.saved-caches').toggleClass('search-mode');
     $('div.canvas-overlay').toggleClass('search-mode');
   });
+
+  $('div.more-info').click(function() {
+    $(this).toggleClass('closed');
+  });
   
 });

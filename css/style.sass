@@ -36,7 +36,7 @@ a
     -webkit-transform: scale(0,0)
     opacity: 1
     border: 15px solid white
-  75%
+  50%
     border: 0px solid white
   100%
     -webkit-transform: scale(4.5,4.5)
@@ -458,32 +458,158 @@ body
     .cache-type
       display: inline-block
       margin-right: 5px
-    .difficulty
+
+.cache-log.navigator
+  padding-bottom: 0
+  margin-bottom: 0
+  position: relative
+  z-index: 1000
+  header .log-cache-slider
+    top: -5px !important
+    
+
+
+/*-------------------------------*/
+/*          MORE INFO            */
+/*-------------------------------*/
+
+
+
+.more-info
+  display: block
+  position: relative
+  //top: -10px
+  height: 345px
+  margin: 0 10px
+  padding: 10px
+  padding-bottom: 0
+  background: #fff
+  box-shadow: 0 2px 2px rgba(0,0,0,0.25)
+  z-index: 1
+  -webkit-transition: height 0.5s
+  &:after
+    content: ""
+    display: block
+    position: absolute
+    right: 25px
+    bottom: -12px
+    width: 55px
+    height: 18px
+    background: url(../images/tab.png)
+    background-size: 100%
+  & > div
+    position: relative
+    -webkit-transition: all 0.5s
+  a.sign-log-btn
+    display: block
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#cddcec), color-stop(100%,#84a7d0)) /* Chrome,Safari4+ */
+    background: -webkit-linear-gradient(top, #cddcec 0%,#84a7d0 100%) /* Chrome10+,Safari5.1+ */
+    border: 1px solid #7496be
+    text-align: center
+    margin-bottom: 25px
+  a.exit-nav-btn
+    position: relative
+    margin: 25px 0
+    display: block
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(205,96,96,1)), color-stop(100%,rgba(171,58,58,1))) /* Chrome,Safari4+ */
+    background: -webkit-linear-gradient(top, rgba(205,96,96,1) 0%,rgba(171,58,58,1) 100%) /* Chrome10+,Safari5.1+ */
+    border: 1px solid #911e1e
+    text-align: center
+    -webkit-transition: all 0.5s
+  h4
+    color: #ececec
+    font-size: 18px
+    font-weight: bold
+    text-transform: uppercase
+    margin: 15px 0
+    text-shadow: 0 -1px 1px rgba(0,0,0,0.35)
+  .difficulty
+    display: inline-block
+    margin-right: 20px
+    .icon-cache
       display: inline-block
-      margin-right: 20px
-      .icon-cache
-        display: inline-block
-        height: 12px
-        width: 18px
-        background-repeat: no-repeat
-        &.green
-          background: url('../images/cache_green.png') !important
-          background-size: 100% !important
-      .icon-star, .icon-star-empty
-        color: $yellow
-        font-size: 10pt
-    .distance
-      display: inline-block
-      h2
-        display: inline-block
-        font-size: 10pt
-      .icon-direction
-        display: inline-block
-        height: 12px
-        width: 10px
-        background: url('../images/distance.png') !important
+      height: 12px
+      width: 18px
+      background-repeat: no-repeat
+      &.green
+        background: url('../images/cache_green.png') !important
         background-size: 100% !important
-        background-repeat: no-repeat
+    .icon-star, .icon-star-empty
+      color: $yellow
+      font-size: 10pt
+  .distance
+    display: inline-block
+    h2
+      display: inline-block
+      font-size: 10pt
+    .icon-direction
+      display: inline-block
+      height: 12px
+      width: 10px
+      background: url('../images/distance.png') !important
+      background-size: 100% !important
+      background-repeat: no-repeat
+  .date
+    float: right
+    display: inline-block
+    text-align: right
+    //text-transform: uppercase
+    color: gray
+    margin-bottom: 15px
+  .cache-type, .findabiliy, .distance
+    margin-bottom: 2px
+  i[class*="star"]
+    color: $yellow
+  .cache-type
+    display: inline-block
+  .icon-cache
+    display: inline-block
+    height: 12px
+    width: 18px
+    background-repeat: no-repeat
+    &.green
+      background: url('../images/cache_green.png') !important
+      background-size: 100% !important
+  .description
+    margin: 25px 0
+    p
+      margin: 10px 0
+  .distance
+    .icon-direction
+      display: inline-block
+      height: 12px
+      width: 10px
+      margin-right: 10px
+      background: url('../images/distance.png') !important
+      background-size: 100% !important
+      background-repeat: no-repeat
+    h2
+      display: inline-block
+      font-size: 12pt
+  .findabiliy
+    .icon-screenshot
+      margin-right: 8px
+      width: 18px
+      color: $blue
+  .terrain
+    .icon-terrain
+      display: inline-block
+      height: 12px
+      width: 18px
+      margin-right: 5px
+      background: url('../images/terrain.png') !important
+      background-size: 100%
+      background-repeat: no-repeat
+  &.closed
+    height: 25px
+    & > div, .exit-nav-btn
+      top: -318px
+      opacity: 0
+    .difficulty, .distance
+      opacity: 1 !important
+    .exit-nav-btn
+      opacity: 0
+
 
 /*-------------------------------*/
 /*           MINI MAP            */
@@ -514,7 +640,7 @@ body
   box-shadow: 0 0 10px rgba(0,0,0,0.15), 0 0 5px rgba(0,0,0,0.1) inset
 
 .pulse1
-  -webkit-animation: pulse 5s ease-in-out 0s infinite 
+  -webkit-animation: pulse 5s cubic-bezier(.10, .10, .25, .90) 0s infinite 
 
 //.pulse2
   -webkit-animation: pulse 6s ease-in-out 3s infinite
@@ -912,67 +1038,68 @@ body
         position: relative
         top: -1px
         color: orange
-    .log-cache-slider
-      @include clearfix
-      position: absolute
-      right: 0
-      top: 0
-      display: inline-block
-      float: right
-      width: 60px
-      height: 60px
-      padding: 5px
-      border-radius: 35px
-      background: #fff
-      overflow: hidden
-      -webkit-transition: all 0.6s
-      z-index: 1000
-      .btn
-        position: relative
-        float: left
-        width: 50px
-        height: 50px
-        border-radius: 50%
-        padding-top: 15px
-        text-align: center
-        border: 2px solid white
-        box-shadow: 0 0 10px 2px rgba(0,0,0,0.15)
-        background: #cddcec /* Old browsers */
-        background: -moz-linear-gradient(top, #cddcec 0%, #84a7d0 100%) /* FF3.6+ */
-        background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#cddcec), color-stop(100%,#84a7d0)) /* Chrome,Safari4+ */
-        background: -webkit-linear-gradient(top, #cddcec 0%,#84a7d0 100%) /* Chrome10+,Safari5.1+ */
-        background: -o-linear-gradient(top, #cddcec 0%,#84a7d0 100%) /* Opera 11.10+ */
-        background: -ms-linear-gradient(top, #cddcec 0%,#84a7d0 100%) /* IE10+ */
-        background: linear-gradient(to bottom, #cddcec 0%,#84a7d0 100%) /* W3C */
-        filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#cddcec', endColorstr='#84a7d0',GradientType=0 ) /* IE6-9 */
-        -webkit-transition: all 0.3s
-        z-index: 100
-        i[class^="icon"]
-          font-weight: bold
-          font-size: 22px
-          color: #85a6d0
-          text-shadow: 0 1px 1px rgba(255,255,255,0.5)
-      h1
-        color: #fff
-        position: absolute
-        top: 12px
-        left: -50px
-        width: 250px
-        opacity: 0
-        //font-weight: bold
-        text-shadow: 0 1px 2px #85a6d0
-        -webkit-transition: all 0.6s
-        -webkit-transition-delay: 0.4s
-        z-index: 1
-      &.slide
-        width: 342px
-        box-shadow: 0 0 5px rgba(0,0,0,0.2) inset
-        background: #cddcec
-        .btn
-          box-shadow: 0 0 5px 2px rgba(0,0,0,0.1)
-        h1
-          opacity: 1
-          left: 75px
+.log-cache-slider
+  @include clearfix
+  position: absolute
+  right: 0
+  top: 0
+  display: inline-block
+  float: right
+  width: 60px
+  height: 60px
+  padding: 5px
+  border-radius: 35px
+  background: #fff
+  overflow: hidden
+  -webkit-transition: all 0.6s
+  z-index: 1000
+  .btn
+    position: relative
+    float: left
+    width: 50px
+    height: 50px
+    border-radius: 50%
+    padding-top: 15px
+    text-align: center
+    border: 2px solid white
+    box-shadow: 0 0 10px 2px rgba(0,0,0,0.15)
+    background: #cddcec /* Old browsers */
+    background: -moz-linear-gradient(top, #cddcec 0%, #84a7d0 100%) /* FF3.6+ */
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#cddcec), color-stop(100%,#84a7d0)) /* Chrome,Safari4+ */
+    background: -webkit-linear-gradient(top, #cddcec 0%,#84a7d0 100%) /* Chrome10+,Safari5.1+ */
+    background: -o-linear-gradient(top, #cddcec 0%,#84a7d0 100%) /* Opera 11.10+ */
+    background: -ms-linear-gradient(top, #cddcec 0%,#84a7d0 100%) /* IE10+ */
+    background: linear-gradient(to bottom, #cddcec 0%,#84a7d0 100%) /* W3C */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#cddcec', endColorstr='#84a7d0',GradientType=0 ) /* IE6-9 */
+    -webkit-transition: all 0.3s
+    z-index: 100
+    i[class^="icon"]
+      font-weight: bold
+      font-size: 22px
+      color: #85a6d0
+      text-shadow: 0 1px 1px rgba(255,255,255,0.5)
+  h1.slide-label
+    color: #fff
+    position: absolute
+    top: 12px
+    left: -50px
+    width: 250px
+    opacity: 0
+    //font-weight: bold
+    text-shadow: 0 1px 2px #85a6d0
+    -webkit-transition: all 0.6s
+    -webkit-transition-delay: 0.4s
+    z-index: 1
+  &.slide
+    width: 342px
+    box-shadow: 0 0 5px rgba(0,0,0,0.2) inset
+    background: #cddcec
+    .btn
+      box-shadow: 0 0 5px 2px rgba(0,0,0,0.1)
+    h1
+      opacity: 1
+      left: 75px
+
 .user-post
   position: relative
   margin-top: 15px
@@ -1212,7 +1339,7 @@ body
   padding: 10px
   margin-bottom: 25px
   background: #fff
-  box-shadow: 0 0 15px rgba(0, 0, 0, 0.35)
+  box-shadow: 0 2px 2px rgba(0, 0, 0, 0.25)
   .location
     i
       font-size: 20px
@@ -1237,7 +1364,7 @@ body
     color: $dark-gray
     padding: 15px 0 10px
     background: #fff
-    box-shadow: 0 0 15px rgba(0, 0, 0, 0.35)
+    box-shadow: 0 2px 2px rgba(0, 0, 0, 0.25)
     display: inline-block
     text-align: center
     width: 48%
@@ -1257,7 +1384,7 @@ body
 .guide-entry
   position: relative
   background: #fff
-  box-shadow: 0 0 15px rgba(0, 0, 0, 0.35)
+  box-shadow: 0 2px 2px rgba(0, 0, 0, 0.25)
   .photos
     img
       width: 100%
