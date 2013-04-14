@@ -43,10 +43,12 @@
         .groove
           %h3 •••
     #main
-      #map-canvas
-      .canvas-overlay
+      .map-container
+        #map-canvas
+        .canvas-overlay
       .header
-        %h1 Field Guide
+        %a{:href => "guide.html"}
+          %h1 Field Guide
       .guide-entry
         .photos
           %img{:src => "../images/deer.jpg"}

@@ -200,7 +200,7 @@ h5
     .header
       top: 0
       opacity: 1
-      box-shadow: 0 0 20px rgba(0,0,0,0.25)
+      box-shadow: 0 2px 2px rgba(0, 0, 0, 0.25)
     ul li
       opacity: 1
       top: 0 !important
@@ -389,11 +389,19 @@ body
 /*          MAP CANVAS           */
 /*-------------------------------*/
 
-#map-canvas
+.map-container
+  position: fixed
   width: 100%
   height: 135%
-  position: absolute
   top: -35%
+  left: 0
+  z-index: -1
+
+#map-canvas
+  float: left
+  width: 100%
+  height: 135%
+  top: -20%
   left: 0
   z-index: -1
 
@@ -421,7 +429,7 @@ body
   background: #fff
   z-index: 1000
   -webkit-transition: all 0.5s
-  box-shadow: 0 0 15px rgba(0,0,0,0.35)
+  box-shadow: 0 2px 2px rgba(0, 0, 0, 0.25)
   h1
     display: inline-block
     margin: 10px 0 6px 0
@@ -448,16 +456,46 @@ body
   padding: 5px
   padding-right: 0
   z-index: 100
-  box-shadow: 0 0 15px rgba(0,0,0,0.35)
+  box-shadow: 0 2px 2px rgba(0, 0, 0, 0.25)
   .cache-info
     display: inline-block
     float: left
     h3
       //margin-bottom: 5px
       font-style: normal
+      //text-transform: uppercase
+      //font-weight: bold
+      //font-size: 20px
+      //color: $dark-gray
     .cache-type
       display: inline-block
       margin-right: 5px
+    .difficulty
+      display: inline-block
+      margin-right: 20px
+      .icon-cache
+        display: inline-block
+        height: 12px
+        width: 18px
+        background-repeat: no-repeat
+        &.green
+          background: url('../images/cache_green.png') !important
+          background-size: 100% !important
+      .icon-star, .icon-star-empty
+        color: $yellow
+        font-size: 10pt
+    .distance
+      display: inline-block
+      h2
+        display: inline-block
+        font-size: 12pt
+      .icon-direction
+        display: inline-block
+        height: 12px
+        width: 10px
+        background: url('../images/distance.png') !important
+        background-size: 100% !important
+        background-repeat: no-repeat
 
 .cache-log.navigator
   padding-bottom: 0
@@ -497,6 +535,7 @@ body
     height: 18px
     background: url(../images/tab.png)
     background-size: 100%
+    background-repeat: no-repeat
   & > div
     position: relative
     -webkit-transition: all 0.5s
@@ -856,7 +895,7 @@ body
   position: relative
   width: 100%
   background: #fff
-  box-shadow: 0 0 10px rgba(0,0,0,0.25)
+  box-shadow: 0 2px 2px rgba(0, 0, 0, 0.25)
   padding: 10px
   .map
     width: 50%
@@ -982,7 +1021,7 @@ body
   position: relative
   width: 100%
   background: #fff
-  box-shadow: 0 0 10px rgba(0,0,0,0.25)
+  box-shadow: 0 2px 2px rgba(0, 0, 0, 0.25)
   padding: 10px
   margin: 15px 0
   header
@@ -1062,7 +1101,7 @@ body
     padding-top: 15px
     text-align: center
     border: 2px solid white
-    box-shadow: 0 0 10px 2px rgba(0,0,0,0.15)
+    box-shadow: 0 0 5px rgba(0,0,0,0.25)
     background: #cddcec /* Old browsers */
     background: -moz-linear-gradient(top, #cddcec 0%, #84a7d0 100%) /* FF3.6+ */
     background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#cddcec), color-stop(100%,#84a7d0)) /* Chrome,Safari4+ */
@@ -1133,13 +1172,13 @@ body
   position: relative
 
 .saved-caches
-  box-shadow: 0 0 15px rgba(0,0,0,0.35)
-  background: rgba(0,0,0,0.15)
+  //box-shadow: 0 2px 2px rgba(0, 0, 0, 0.25)
+  //background: rgba(0,0,0,0.15)
   position: relative
   -webkit-transition: top 0.3s, opacity 0.6s
   .cache-header
     padding-left: 10px
-    box-shadow: 0 0 0 transparent !important
+    //box-shadow: 0 0 0 transparent !important
     margin-bottom: 5px
     //border-bottom: 1 px solid #dcddde
     .cache-info
@@ -1160,7 +1199,7 @@ body
   padding-right: 0 !important
   margin: 25px 0
   background: #fff
-  box-shadow: 0 0 15px rgba(0,0,0,0.35)
+  box-shadow: 0 2px 2px rgba(0, 0, 0, 0.25)
   -webkit-transition: top 0.3s
   .search-btn
     width: 60px
@@ -1220,7 +1259,7 @@ body
       position: relative
       padding: 10px
       background: #fff
-      box-shadow: 0 0 10px rgba(0,0,0,0.15)
+      box-shadow: 0 2px 2px rgba(0, 0, 0, 0.25)
       z-index: 100
       h3
         color: $green
@@ -1250,7 +1289,7 @@ body
     .cache-map
       position: relative
       background: #fff
-      box-shadow: 0 0 10px rgba(0,0,0,0.15)
+      box-shadow: 0 2px 2px rgba(0, 0, 0, 0.25)
       height: 200px
       //margin: 0 10px
       padding: 10px
@@ -1271,7 +1310,7 @@ body
     .cache-description
       position: relative
       background: #fff
-      box-shadow: 0 0 10px rgba(0,0,0,0.15)
+      box-shadow: 0 2px 2px rgba(0, 0, 0, 0.25)
       //margin: 0 20px
       z-index: 50
       padding: 25px 10px 0px
