@@ -57,5 +57,9 @@ $(document).ready(function() {
   $('div.more-info').click(function() {
     $(this).toggleClass('closed');
   });
+
+  $('div.nearby-cache').click(function() {
+    $(this).toggleClass('active');
+  });
   
 });

@@ -47,6 +47,22 @@
       .header
         %h1 Nearby Caches
       .mini-map
+      .nearby-cache
+        .tooltip
+          .cache-header
+            %a.cache-info{:href => "peppis_cache.html"}
+              .menu-btn
+                %i.icon-chevron-right
+              %h3 Peppi's Cache
+              .difficulty
+                .icon-cache.green
+                %i.icon-star
+                %i.icon-star
+                %i.icon-star-empty
+              .distance
+                .icon-direction
+                %h2 1.1mi
+        .marker
       
 
   %script{:src => "/js/toggles-ck.js"}

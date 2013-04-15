@@ -388,7 +388,8 @@ body {
     height: 0; }
   .cache-header .cache-info {
     display: inline-block;
-    float: left; }
+    float: left;
+    width: 100%; }
     .cache-header .cache-info h3 {
       font-style: normal; }
     .cache-header .cache-info .cache-type {
@@ -785,6 +786,53 @@ body {
       left: 15px; }
       .compass-container .new-post-btn .icon-new-post img {
         width: 50%; }
+
+/*------------------------------- */
+/*         NEARBY CACHES         */
+/*------------------------------- */
+.nearby-cache {
+  position: absolute;
+  width: 80%; }
+  .nearby-cache.active .tooltip {
+    opacity: 1;
+    top: 0; }
+
+.marker {
+  position: absolute;
+  top: 80px;
+  width: 50px;
+  height: 50px;
+  background: url("../images/marker.png");
+  background-size: 100%;
+  background-repeat: no-repeat; }
+
+.tooltip {
+  position: absolute;
+  top: 15px;
+  display: block;
+  width: 100%;
+  opacity: 0;
+  -webkit-transition: all 0.3s; }
+  .tooltip:before {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 68px;
+    left: 10px;
+    width: 0;
+    height: 0;
+    border: 15px solid;
+    border-color: rgba(0, 0, 0, 0.15) transparent transparent transparent; }
+  .tooltip:after {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 65px;
+    left: 10px;
+    width: 0;
+    height: 0;
+    border: 15px solid;
+    border-color: white transparent transparent transparent; }
 
 /*------------------------------- */
 /*          CACHE INFO           */
