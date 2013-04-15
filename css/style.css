@@ -792,10 +792,37 @@ body {
 /*------------------------------- */
 .nearby-cache {
   position: absolute;
-  width: 80%; }
+  width: 80%;
+  left: 15%; }
+  .nearby-cache .tooltip {
+    left: -10%; }
+    .nearby-cache .tooltip:before, .nearby-cache .tooltip:after {
+      left: 13%; }
   .nearby-cache.active .tooltip {
     opacity: 1;
-    top: 0; }
+    top: 0;
+    pointer-events: auto; }
+  .nearby-cache.two {
+    top: 100px;
+    left: 50%; }
+    .nearby-cache.two .tooltip {
+      left: -40%; }
+      .nearby-cache.two .tooltip:before, .nearby-cache.two .tooltip:after {
+        left: 43%; }
+  .nearby-cache.three {
+    top: 200px;
+    left: 65%; }
+    .nearby-cache.three .tooltip {
+      left: -60%; }
+      .nearby-cache.three .tooltip:before, .nearby-cache.three .tooltip:after {
+        left: 63%; }
+  .nearby-cache.four {
+    top: 125px;
+    left: 35%; }
+    .nearby-cache.four .tooltip {
+      left: -40%; }
+      .nearby-cache.four .tooltip:before, .nearby-cache.four .tooltip:after {
+        left: 43%; }
 
 .marker {
   position: absolute;
@@ -812,12 +839,13 @@ body {
   display: block;
   width: 100%;
   opacity: 0;
+  pointer-events: none;
   -webkit-transition: all 0.3s; }
   .tooltip:before {
     content: "";
     display: block;
     position: absolute;
-    top: 68px;
+    top: 67px;
     left: 10px;
     width: 0;
     height: 0;

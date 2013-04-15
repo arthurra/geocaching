@@ -897,10 +897,38 @@ body
 .nearby-cache
   position: absolute
   width: 80%
+  left: 15%
+  .tooltip
+    left: -10%
+    &:before, &:after
+      left: 13%
   &.active
     .tooltip
       opacity: 1
       top: 0
+      pointer-events: auto
+  &.two 
+    top: 100px
+    left: 50%
+    .tooltip
+      left: -40%
+      &:before, &:after
+        left: 43%
+  &.three 
+    top: 200px
+    left: 65%
+    .tooltip
+      left: -60%
+      &:before, &:after
+        left: 63%
+  &.four 
+    top: 125px
+    left: 35%
+    .tooltip
+      left: -40%
+      &:before, &:after
+        left: 43%
+
 
 .marker
   position: absolute
@@ -917,12 +945,13 @@ body
   display: block
   width: 100%
   opacity: 0
+  pointer-events: none
   -webkit-transition: all 0.3s
   &:before
     content: ""
     display: block
     position: absolute
-    top: 68px
+    top: 67px
     left: 10px
     width: 0
     height: 0
