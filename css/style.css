@@ -1105,28 +1105,36 @@ body {
     line-height: 0;
     height: 0; }
   .search .search-btn {
-    width: 60px;
+    width: 0px;
     height: 55px;
+    opacity: 0;
     display: inline-block;
     float: right;
     border-left: 1px solid #dcddde;
     text-align: center;
     font-size: 16pt;
     padding-top: 18px;
-    color: #88af33; }
+    color: #88af33;
+    -webkit-transition: all 0.3s; }
   .search input {
     display: inline-block;
     float: left;
     height: 45px;
-    width: 75%;
+    width: 96%;
     line-height: 40px;
     font-size: 24px;
-    margin: 5px; }
+    margin: 5px;
+    -webkit-transition: all 0.3s; }
     .search input:focus {
       outline: 0; }
 
 .search-mode {
   top: -90px; }
+  .search-mode .search-btn {
+    width: 60px;
+    opacity: 1; }
+  .search-mode input {
+    width: 75%; }
 
 .canvas-overlay.search-mode {
   opacity: 1; }
@@ -1259,7 +1267,7 @@ body {
   margin-bottom: 25px;
   background: white;
   box-shadow: 0 2px 2px rgba(0, 0, 0, 0.25);
-  -webkit-transition: opacity 0.5s; }
+  -webkit-transition: all 0.5s; }
   .local-guide .location i {
     font-size: 20px;
     color: #58595b; }
@@ -1278,7 +1286,7 @@ body {
 
 .guide-menu {
   position: relative;
-  -webkit-transition: opacity 0.5s; }
+  -webkit-transition: all 0.5s; }
   .guide-menu ul li {
     position: relative;
     color: #58595b;
