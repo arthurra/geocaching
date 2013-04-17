@@ -452,7 +452,7 @@ body {
     bottom: -12px;
     width: 55px;
     height: 18px;
-    background: url(../images/tab.png);
+    background: url("../images/tab.png");
     background-size: 100%;
     background-repeat: no-repeat; }
   .more-info > div {
