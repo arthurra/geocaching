@@ -131,27 +131,27 @@ a {
 
 h1 {
   color: #88af33;
-  font-size: 40pt;
+  font-size: 50pt;
   margin: 0;
   font-weight: bold;
   text-transform: uppercase; }
 
 h2 {
   color: #58595b;
-  font-size: 24pt;
+  font-size: 36pt;
   margin: 0; }
 
 h3 {
   color: #88af33;
   margin: 0;
   font-style: italic;
-  font-size: 44px; }
+  font-size: 66px; }
 
 h5 {
   color: #88af33;
   font-weight: bold;
   text-transform: uppercase;
-  font-size: 28px;
+  font-size: 42px;
   margin: 0; }
 
 /*------------------------------- */
