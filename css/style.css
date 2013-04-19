@@ -582,15 +582,15 @@ body {
 /*------------------------------- */
 .magic-arrow {
   position: relative;
-  height: 275px;
-  width: 275px;
+  height: 550px;
+  width: 550px;
   margin: auto; }
 
 .pulse1, .pulse2, .pulse3 {
   -webkit-transform-origin: center;
   position: absolute;
-  width: 275px;
-  height: 275px;
+  width: 550px;
+  height: 550px;
   border-radius: 50%;
   border: 10px solid white;
   background: transparent;
@@ -603,8 +603,8 @@ body {
   position: absolute;
   top: 0;
   left: 0;
-  height: 275px;
-  width: 275px;
+  height: 550px;
+  width: 550px;
   margin: auto;
   border-radius: 50%;
   overflow: hidden;
@@ -643,32 +643,32 @@ body {
           position: relative;
           -webkit-transform: rotate(-45deg); }
           .menu-container .dividers table tr td .sub-btn i[class^="icon"] {
-            font-size: 24px;
+            font-size: 48px;
             display: block;
             color: #58595b;
             text-shadow: 0 1px 50px white, 0 1px 50px white, 0 1px 0 rgba(255, 255, 255, 0.75); }
           .menu-container .dividers table tr td .sub-btn h2 {
-            margin-top: 10px;
+            margin-top: 20px;
             color: #58595b;
             text-shadow: 0 1px 50px white, 0 1px 0 white; }
           .menu-container .dividers table tr td .sub-btn.photo {
-            top: 10px;
-            left: 10px; }
+            top: 20px;
+            left: 20px; }
           .menu-container .dividers table tr td .sub-btn.text {
-            top: 10px;
-            right: 10px; }
+            top: 20px;
+            right: 20px; }
           .menu-container .dividers table tr td .sub-btn.guide {
-            top: -5px;
-            left: 5px; }
+            top: -10px;
+            left: 10px; }
           .menu-container .dividers table tr td .sub-btn.video {
-            top: -5px;
-            left: -5px; }
+            top: -10px;
+            left: -10px; }
   .menu-container .back {
     position: absolute;
-    top: 100px;
-    left: 100px;
-    width: 75px;
-    height: 75px; }
+    top: 200px;
+    left: 200px;
+    width: 150px;
+    height: 150px; }
     .menu-container .back .bezel-shadow, .menu-container .back .bezel-highlight {
       width: 100%;
       height: 100%;
@@ -720,17 +720,17 @@ body {
       text-align: center; }
       .menu-container .back .back-btn i[class^="icon"] {
         position: relative;
-        top: 15px;
+        top: 30px;
         color: white;
-        font-size: 24px;
+        font-size: 48px;
         text-shadow: 0 1px 5px rgba(0, 0, 0, 0.15); }
 
 .compass-container {
   position: absolute;
-  top: 12px;
-  left: 12px;
-  height: 250px;
-  width: 250px;
+  top: 24px;
+  left: 24px;
+  height: 500px;
+  width: 500px;
   border-radius: 50%;
   border: 6px solid white;
   background: #e5e5e5;
@@ -748,33 +748,33 @@ body {
     -webkit-transform: rotate(180deg); }
   .compass-container .directions {
     position: absolute;
-    top: 4px;
-    left: 4px;
+    top: 8px;
+    left: 8px;
     margin: auto;
-    height: 230px;
-    width: 230px;
+    height: 460px;
+    width: 460px;
     background-image: url("../images/compass.png");
     background-size: 100%;
     background-repeat: no-repeat;
     -webkit-animation: rotate-compass 10s infinite; }
   .compass-container .arrow {
     position: absolute;
-    left: 57px;
-    top: 24px;
-    height: 160px;
-    width: 125px;
+    left: 114px;
+    top: 48px;
+    height: 320px;
+    width: 250px;
     background-image: url("../images/compass-arrow.png");
     background-size: 100%;
     background-repeat: no-repeat;
     -webkit-transform: rotate(45deg);
-    -webkit-transform-origin: 50% 57.55%;
+    -webkit-transform-origin: 50% 57.95%;
     -webkit-animation: rotate-pointer 10s infinite; }
   .compass-container .new-post-btn {
     position: absolute;
-    top: 83px;
-    left: 88px;
-    width: 65px;
-    height: 65px;
+    top: 168px;
+    left: 173px;
+    width: 130px;
+    height: 130px;
     border-radius: 50%;
     border: 2px solid white;
     background: #cddcec;
@@ -788,8 +788,8 @@ body {
     box-shadow: 0 2px 10px rgba(0, 0, 0, 0.25); }
     .compass-container .new-post-btn .icon-new-post {
       position: relative;
-      top: 15px;
-      left: 15px; }
+      top: 30px;
+      left: 30px; }
       .compass-container .new-post-btn .icon-new-post img {
         width: 50%; }
 
@@ -1112,7 +1112,7 @@ body {
     -webkit-transition-delay: 0.4s;
     z-index: 1; }
   .log-cache-slider.slide {
-    width: 975px;
+    width: 900px;
     box-shadow: 0 0 5px rgba(0, 0, 0, 0.2) inset;
     background: #cddcec;
     margin: auto; }
