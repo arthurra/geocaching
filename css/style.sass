@@ -170,7 +170,7 @@ h5
   color: $green
   font-weight: bold
   text-transform: uppercase
-  font-size: 18pt
+  font-size: 24pt
   margin: 0
 
 /*-------------------------------*/
@@ -504,7 +504,7 @@ body
   position: relative
   z-index: 1000
   header .log-cache-slider
-    top: -5px !important
+    top: 15px !important
     
 
 
@@ -518,7 +518,7 @@ body
   display: block
   position: relative
   //top: -10px
-  height: 865px
+  height: 630px
   margin: 0 20px
   padding: 20px
   padding-bottom: 0
@@ -596,25 +596,29 @@ body
     //text-transform: uppercase
     color: gray
     margin-bottom: 30px
+    font-size: 24pt
   .cache-type, .findabiliy, .distance
     margin-bottom: 4px
   i[class*="star"]
     color: $yellow
-    font-size: 20pt
+    font-size: 26pt
   .cache-type
     display: inline-block
-  .icon-cache
-    display: inline-block
-    height: 24px
-    width: 36px
-    background-repeat: no-repeat
-    &.green
-      background: url('../images/cache_green.png') !important
-      background-size: 100% !important
+    font-size: 24pt
+    .icon-cache
+      display: inline-block
+      height: 24px
+      width: 36px
+      margin-right: 5px
+      background-repeat: no-repeat
+      &.green
+        background: url('../images/cache_green.png') !important
+        background-size: 100% !important
   .description
     margin: 50px 0
     p
       margin: 20px 0
+      font-size: 24pt
   .distance
     .icon-direction
       display: inline-block
@@ -632,7 +636,7 @@ body
       margin-right: 16px
       width: 36px
       color: $blue
-      font-size: 20pt
+      font-size: 26pt
   .terrain
     .icon-terrain
       display: inline-block
@@ -645,7 +649,7 @@ body
   &.closed
     height: 50px
     & > div, .exit-nav-btn
-      top: -295px
+      top: -575px
       opacity: 0
     .difficulty, .distance
       opacity: 1 !important
@@ -1168,10 +1172,10 @@ body
   top: 0
   display: inline-block
   float: right
-  width: 60px
-  height: 60px
-  padding: 5px
-  border-radius: 35px
+  width: 120px
+  height: 120px
+  padding: 10px
+  border-radius: 70px
   background: #fff
   overflow: hidden
   -webkit-transition: all 0.6s
@@ -1179,10 +1183,10 @@ body
   .btn
     position: relative
     float: left
-    width: 50px
-    height: 50px
+    width: 100px
+    height: 100px
     border-radius: 50%
-    padding-top: 15px
+    padding-top: 30px
     text-align: center
     border: 2px solid white
     box-shadow: 0 0 5px rgba(0,0,0,0.25)
@@ -1198,15 +1202,15 @@ body
     z-index: 100
     i[class^="icon"]
       font-weight: bold
-      font-size: 22px
+      font-size: 44px
       color: #85a6d0
       text-shadow: 0 1px 1px rgba(255,255,255,0.5)
   h1.slide-label
     color: #fff
     position: absolute
     top: 12px
-    left: -50px
-    width: 250px
+    left: 0px
+    //width: 250px
     opacity: 0
     //font-weight: bold
     text-shadow: 0 1px 2px #85a6d0
@@ -1214,14 +1218,15 @@ body
     -webkit-transition-delay: 0.4s
     z-index: 1
   &.slide
-    width: 342px
+    width: 975px
     box-shadow: 0 0 5px rgba(0,0,0,0.2) inset
     background: #cddcec
+    margin: auto
     .btn
       box-shadow: 0 0 5px 2px rgba(0,0,0,0.1)
     h1
       opacity: 1
-      left: 75px
+      left: 175px
 
 .user-post
   position: relative
