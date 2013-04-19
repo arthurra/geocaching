@@ -22,7 +22,7 @@ $(function() {
 
 
 $(function() {
-	var u = -400
+	var u = -800
 
 	$("div#menu").draggable({
 		axis: 'y',
@@ -38,7 +38,7 @@ $(function() {
 		stop: function(event, ui) {
 			if (ui.position.top < u + 1) {
 				$(this).animate({
-					top: -582
+					top: -1160
 				});
 			}
 		}

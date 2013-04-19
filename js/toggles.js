@@ -24,17 +24,10 @@ $(document).ready(function() {
   //   });
   // };
 
-  $('div#main .header').click(function() {
+  $('div#main').click(function() {
     $('div#menu').removeClass('open');
     $('div#menu').animate({
-      top: -582
-    });
-  });
-
-  $('div#main header').click(function() {
-    $('div#menu').removeClass('open');
-    $('div#menu').animate({
-      top: -582
+      top: -1160
     });
   });
 
