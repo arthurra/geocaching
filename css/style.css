@@ -584,7 +584,7 @@ body {
 /*           MINI MAP            */
 /*------------------------------- */
 .mini-map {
-  height: 300px;
+  height: 450px;
   width: 100%; }
 
 /*------------------------------- */
@@ -1103,7 +1103,6 @@ body {
     background: -ms-linear-gradient(top, #cddcec 0%, #84a7d0 100%);
     background: linear-gradient(to bottom, #cddcec 0%, #84a7d0 100%);
     filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#cddcec', endColorstr='#84a7d0',GradientType=0 );
-    -webkit-transition: all 0.3s;
     z-index: 100; }
     .log-cache-slider .btn i[class^="icon"] {
       font-weight: bold;
