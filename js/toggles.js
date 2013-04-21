@@ -1,5 +1,13 @@
 $(document).ready(function() {
 
+  $('div.mini-map').click(function(){
+    $('div.content-container').toggleClass('hidden');
+  });
+
+  $('div.map-container').click(function(){
+    $('div.content-container').toggleClass('hidden');
+  });
+
   $('div.new-post-btn').click(function() {
     $('div.compass-container').toggleClass('open');
     $('div.menu-container .dividers').toggleClass('hidden');

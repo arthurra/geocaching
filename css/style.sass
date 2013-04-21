@@ -418,6 +418,18 @@ body
 
 
 /*-------------------------------*/
+/*      CONTENT CONTAINER        */
+/*-------------------------------*/
+
+
+.content-container
+  -webkit-transition: all 0.3s
+  &.hidden
+    -webkit-transform: scale(0.9)
+    pointer-events: none
+
+
+/*-------------------------------*/
 /*            HEADER             */
 /*-------------------------------*/
 
@@ -540,6 +552,7 @@ body
   & > div
     position: relative
     -webkit-transition: all 0.5s
+    pointer-events: none
   a.sign-log-btn
     display: block
     background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#cddcec), color-stop(100%,#84a7d0)) /* Chrome,Safari4+ */
