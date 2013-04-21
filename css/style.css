@@ -592,15 +592,15 @@ body {
 /*------------------------------- */
 .magic-arrow {
   position: relative;
-  height: 550px;
-  width: 550px;
+  height: 825px;
+  width: 825px;
   margin: auto; }
 
 .pulse1, .pulse2, .pulse3 {
   -webkit-transform-origin: center;
   position: absolute;
-  width: 550px;
-  height: 550px;
+  width: 825px;
+  height: 825px;
   border-radius: 50%;
   border: 10px solid white;
   background: transparent;
@@ -613,8 +613,8 @@ body {
   position: absolute;
   top: 0;
   left: 0;
-  height: 550px;
-  width: 550px;
+  height: 825px;
+  width: 825px;
   margin: auto;
   border-radius: 50%;
   overflow: hidden;
@@ -658,27 +658,27 @@ body {
             color: #58595b;
             text-shadow: 0 1px 50px white, 0 1px 50px white, 0 1px 0 rgba(255, 255, 255, 0.75); }
           .menu-container .dividers table tr td .sub-btn h2 {
-            margin-top: 20px;
+            margin-top: 30px;
             color: #58595b;
             text-shadow: 0 1px 50px white, 0 1px 0 white; }
           .menu-container .dividers table tr td .sub-btn.photo {
-            top: 20px;
-            left: 20px; }
+            top: 30px;
+            left: 30px; }
           .menu-container .dividers table tr td .sub-btn.text {
-            top: 20px;
-            right: 20px; }
+            top: 30px;
+            right: 30px; }
           .menu-container .dividers table tr td .sub-btn.guide {
-            top: -10px;
-            left: 10px; }
+            top: -15px;
+            left: 15px; }
           .menu-container .dividers table tr td .sub-btn.video {
-            top: -10px;
-            left: -10px; }
+            top: -15px;
+            left: -15px; }
   .menu-container .back {
     position: absolute;
-    top: 200px;
-    left: 200px;
-    width: 150px;
-    height: 150px; }
+    top: 300px;
+    left: 300px;
+    width: 225px;
+    height: 225px; }
     .menu-container .back .bezel-shadow, .menu-container .back .bezel-highlight {
       width: 100%;
       height: 100%;
@@ -730,17 +730,17 @@ body {
       text-align: center; }
       .menu-container .back .back-btn i[class^="icon"] {
         position: relative;
-        top: 30px;
+        top: 45px;
         color: white;
         font-size: 48px;
         text-shadow: 0 1px 5px rgba(0, 0, 0, 0.15); }
 
 .compass-container {
   position: absolute;
-  top: 24px;
-  left: 24px;
-  height: 500px;
-  width: 500px;
+  top: 36px;
+  left: 36px;
+  height: 750px;
+  width: 750px;
   border-radius: 50%;
   border: 6px solid white;
   background: #e5e5e5;
@@ -758,21 +758,21 @@ body {
     -webkit-transform: rotate(180deg); }
   .compass-container .directions {
     position: absolute;
-    top: 15px;
-    left: 13px;
+    top: 22px;
+    left: 18px;
     margin: auto;
-    height: 460px;
-    width: 460px;
+    height: 690px;
+    width: 690px;
     background-image: url("../images/compass.png");
     background-size: 100%;
     background-repeat: no-repeat;
     -webkit-animation: rotate-compass 10s infinite; }
   .compass-container .arrow {
     position: absolute;
-    left: 119px;
-    top: 60px;
-    height: 320px;
-    width: 250px;
+    left: 179px;
+    top: 90px;
+    height: 480px;
+    width: 375px;
     background-image: url("../images/compass-arrow.png");
     background-size: 100%;
     background-repeat: no-repeat;
@@ -780,10 +780,10 @@ body {
     -webkit-animation: rotate-pointer 10s infinite; }
   .compass-container .new-post-btn {
     position: absolute;
-    top: 179px;
-    left: 178px;
-    width: 130px;
-    height: 130px;
+    top: 270px;
+    left: 268px;
+    width: 195px;
+    height: 195px;
     border-radius: 50%;
     border: 2px solid white;
     background: #cddcec;
@@ -797,8 +797,8 @@ body {
     box-shadow: 0 2px 10px rgba(0, 0, 0, 0.25); }
     .compass-container .new-post-btn .icon-new-post {
       position: relative;
-      top: 30px;
-      left: 30px; }
+      top: 45px;
+      left: 45px; }
       .compass-container .new-post-btn .icon-new-post img {
         width: 50%; }
 
