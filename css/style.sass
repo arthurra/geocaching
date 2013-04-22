@@ -164,7 +164,7 @@ h3
   color: #88af33
   margin: 0
   font-style: italic
-  font-size: 24pt
+  font-size: 32pt
 
 h5
   color: $green
@@ -436,6 +436,7 @@ body
 
 .header
   position: relative
+  top: 15px
   text-align: center
   padding: 5px 0
   margin-bottom: 10px
@@ -451,14 +452,14 @@ body
     color: $green
 
 .menu-btn
-  width: 60px
+  width: 120px
   display: inline-block
   float: right
-  border-left: 1px solid #dcddde
-  height: 55px
+  border-left: 2px solid #dcddde
+  height: 110px
   text-align: center
-  font-size: 16pt
-  padding-top: 18px
+  font-size: 32pt
+  padding-top: 36px
   color: $green
 
 .cache-header
@@ -466,7 +467,7 @@ body
   position: relative
   background: white
   width: 100%
-  padding: 5px
+  padding: 10px 20px
   padding-right: 0
   z-index: 100
   box-shadow: 0 2px 2px rgba(0, 0, 0, 0.25)
@@ -475,7 +476,7 @@ body
     float: left
     width: 100%
     h3
-      //margin-bottom: 5px
+      margin-bottom: 10px
       font-style: normal
       //text-transform: uppercase
       //font-weight: bold
@@ -489,20 +490,27 @@ body
       margin-right: 20px
       .icon-cache
         display: inline-block
-        height: 12px
-        width: 18px
+        height: 24px
+        width: 36px
         background-repeat: no-repeat
         &.green
           background: url('../images/cache_green.png') !important
           background-size: 100% !important
       .icon-star, .icon-star-empty
         color: $yellow
-        font-size: 10pt
+        font-size: 20pt
     .distance
       display: inline-block
       h2
         display: inline-block
-        font-size: 12pt
+        font-size: 20pt
+      .icon-direction
+        display: inline-block
+        height: 24px
+        width: 20px
+        background: url('../images/distance.png') !important
+        background-size: 100% !important
+        background-repeat: no-repeat
       .icon-direction
         display: inline-block
         height: 12px
@@ -922,6 +930,7 @@ body
 
 .nearby-cache
   position: absolute
+  top: 250px
   width: 80%
   left: 15%
   .tooltip
@@ -934,21 +943,21 @@ body
       top: 0
       pointer-events: auto
   &.two 
-    top: 100px
+    top: 450px
     left: 50%
     .tooltip
       left: -40%
       &:before, &:after
         left: 43%
   &.three 
-    top: 200px
+    top: 500px
     left: 65%
     .tooltip
       left: -60%
       &:before, &:after
         left: 63%
   &.four 
-    top: 125px
+    top: 650px
     left: 35%
     .tooltip
       left: -40%
@@ -958,9 +967,9 @@ body
 
 .marker
   position: absolute
-  top: 80px
-  width: 50px
-  height: 50px
+  top: 150px
+  width: 100px
+  height: 100px
   background: url("../images/marker.png")
   background-size: 100%
   background-repeat: no-repeat
@@ -977,21 +986,21 @@ body
     content: ""
     display: block
     position: absolute
-    top: 67px
+    top: 130px
     left: 10px
     width: 0
     height: 0
-    border: 15px solid
+    border: 30px solid
     border-color: rgba(0,0,0,0.15) transparent transparent transparent 
   &:after
     content: ""
     display: block
     position: absolute
-    top: 65px
+    top: 125px
     left: 10px
     width: 0
     height: 0
-    border: 15px solid
+    border: 30px solid
     border-color: #fff transparent transparent transparent 
  
 
