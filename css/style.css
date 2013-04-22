@@ -362,7 +362,7 @@ body {
   top: 15px;
   text-align: center;
   padding: 5px 0;
-  margin-bottom: 10px;
+  margin-bottom: 30px;
   background: white;
   z-index: 1000;
   -webkit-transition: all 0.5s;
@@ -1183,7 +1183,7 @@ body {
       width: 100%; }
       .saved-caches .cache-header .cache-info .menu-btn {
         position: absolute;
-        top: 5px;
+        top: 10px;
         right: 0; }
 
 .search-mode .cache-header {
@@ -1195,7 +1195,7 @@ body {
   display: block;
   position: relative;
   width: 100%;
-  padding: 5px;
+  padding: 20px;
   padding-right: 0 !important;
   margin: 25px 0;
   background: white;
@@ -1210,23 +1210,23 @@ body {
     height: 0; }
   .search .search-btn {
     width: 0px;
-    height: 55px;
+    height: 110px;
     opacity: 0;
     display: inline-block;
     float: right;
-    border-left: 1px solid #dcddde;
+    border-left: 2px solid #dcddde;
     text-align: center;
-    font-size: 16pt;
-    padding-top: 18px;
+    font-size: 32pt;
+    padding-top: 36px;
     color: #88af33;
     -webkit-transition: all 0.3s; }
   .search input {
     display: inline-block;
     float: left;
-    height: 45px;
+    height: 100px;
     width: 96%;
-    line-height: 40px;
-    font-size: 24px;
+    line-height: 70px;
+    font-size: 36pt;
     margin: 5px;
     -webkit-transition: all 0.3s; }
     .search input:focus {
@@ -1235,10 +1235,10 @@ body {
 .search-mode {
   top: -90px; }
   .search-mode .search-btn {
-    width: 60px;
+    width: 120px;
     opacity: 1; }
   .search-mode input {
-    width: 75%; }
+    width: 80%; }
 
 .canvas-overlay.search-mode {
   opacity: 1; }
