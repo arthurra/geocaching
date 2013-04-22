@@ -138,20 +138,20 @@ h1 {
 
 h2 {
   color: #58595b;
-  font-size: 36pt;
+  font-size: 42pt;
   margin: 0; }
 
 h3 {
   color: #88af33;
   margin: 0;
   font-style: italic;
-  font-size: 32pt; }
+  font-size: 36pt; }
 
 h5 {
   color: #88af33;
   font-weight: bold;
   text-transform: uppercase;
-  font-size: 24pt;
+  font-size: 32pt;
   margin: 0; }
 
 /*------------------------------- */
@@ -375,10 +375,10 @@ body {
   display: inline-block;
   float: right;
   border-left: 2px solid #dcddde;
-  height: 110px;
+  height: 124px;
   text-align: center;
   font-size: 32pt;
-  padding-top: 36px;
+  padding-top: 45px;
   color: #88af33; }
 
 .cache-header {
@@ -425,18 +425,12 @@ body {
       display: inline-block; }
       .cache-header .cache-info .distance h2 {
         display: inline-block;
-        font-size: 20pt; }
+        font-size: 24pt; }
       .cache-header .cache-info .distance .icon-direction {
         display: inline-block;
+        margin-right: 10px;
         height: 24px;
         width: 20px;
-        background: url("../images/distance.png") !important;
-        background-size: 100% !important;
-        background-repeat: no-repeat; }
-      .cache-header .cache-info .distance .icon-direction {
-        display: inline-block;
-        height: 12px;
-        width: 10px;
         background: url("../images/distance.png") !important;
         background-size: 100% !important;
         background-repeat: no-repeat; }
@@ -522,6 +516,7 @@ body {
       font-size: 20pt; }
     .more-info .distance .icon-direction {
       display: inline-block;
+      margin-right: 10px;
       height: 24px;
       width: 20px;
       background: url("../images/distance.png") !important;
@@ -560,7 +555,7 @@ body {
     display: inline-block;
     height: 24px;
     width: 20px;
-    margin-right: 20px;
+    margin-right: 10px;
     background: url("../images/distance.png") !important;
     background-size: 100% !important;
     background-repeat: no-repeat; }
@@ -857,7 +852,7 @@ body {
 
 .marker {
   position: absolute;
-  top: 150px;
+  top: 165px;
   width: 100px;
   height: 100px;
   background: url("../images/marker.png");
@@ -876,7 +871,7 @@ body {
     content: "";
     display: block;
     position: absolute;
-    top: 130px;
+    top: 144px;
     left: 10px;
     width: 0;
     height: 0;
@@ -886,7 +881,7 @@ body {
     content: "";
     display: block;
     position: absolute;
-    top: 125px;
+    top: 140px;
     left: 10px;
     width: 0;
     height: 0;
@@ -931,6 +926,7 @@ body {
         background-size: 100% !important; }
     .cache-data .specs .distance .icon-direction {
       display: inline-block;
+      margin-right: 10px;
       height: 12px;
       width: 10px;
       margin-right: 10px;
