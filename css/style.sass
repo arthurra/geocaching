@@ -747,12 +747,18 @@ body
         text-align: center
         vertical-align: center
         &:active
-          background: rgba(0,0,0,0.1)
+          .sub-btn
+            background: rgba(0,0,0,0.1)
         .sub-btn
           position: relative
+          border-radius: 20px
+          display: inline-block
+          width: 50%
+          padding: 20px
+          -webkit-transition: background 0.2s
           -webkit-transform: rotate(-45deg)
           i[class^="icon"]
-            font-size: 48px
+            font-size: 60px
             display: block
             color: $dark-gray
             text-shadow: 0 1px 50px white, 0 1px 50px white, 0 1px 0 rgba(255,255,255,0.75)
@@ -769,15 +775,15 @@ body
             top: 25px
             right: 25px
           &.guide
-            top: -12px
-            left: 12px
+            top: -15px
+            left: 15px
           &.video
             top: -12px
             left: -12px
   .back
     position: absolute
-    top: 250px
-    left: 250px
+    top: 282px
+    left: 282px
     width: 185px
     height: 185px
     .bezel-shadow, .bezel-highlight
@@ -834,7 +840,7 @@ body
         top: 37px
         //left: 19px
         color: #fff
-        font-size: 48px
+        font-size: 60px
         text-shadow: 0 1px 5px rgba(0,0,0,0.15)
 
 

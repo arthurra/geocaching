@@ -648,13 +648,18 @@ body {
         height: 50%;
         text-align: center;
         vertical-align: center; }
-        .menu-container .dividers table tr td:active {
+        .menu-container .dividers table tr td:active .sub-btn {
           background: rgba(0, 0, 0, 0.1); }
         .menu-container .dividers table tr td .sub-btn {
           position: relative;
+          border-radius: 20px;
+          display: inline-block;
+          width: 50%;
+          padding: 20px;
+          -webkit-transition: background 0.2s;
           -webkit-transform: rotate(-45deg); }
           .menu-container .dividers table tr td .sub-btn i[class^="icon"] {
-            font-size: 48px;
+            font-size: 60px;
             display: block;
             color: #58595b;
             text-shadow: 0 1px 50px white, 0 1px 50px white, 0 1px 0 rgba(255, 255, 255, 0.75); }
@@ -669,15 +674,15 @@ body {
             top: 25px;
             right: 25px; }
           .menu-container .dividers table tr td .sub-btn.guide {
-            top: -12px;
-            left: 12px; }
+            top: -15px;
+            left: 15px; }
           .menu-container .dividers table tr td .sub-btn.video {
             top: -12px;
             left: -12px; }
   .menu-container .back {
     position: absolute;
-    top: 250px;
-    left: 250px;
+    top: 282px;
+    left: 282px;
     width: 185px;
     height: 185px; }
     .menu-container .back .bezel-shadow, .menu-container .back .bezel-highlight {
@@ -733,7 +738,7 @@ body {
         position: relative;
         top: 37px;
         color: white;
-        font-size: 48px;
+        font-size: 60px;
         text-shadow: 0 1px 5px rgba(0, 0, 0, 0.15); }
 
 .compass-container {
