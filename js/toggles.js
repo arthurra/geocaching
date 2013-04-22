@@ -35,7 +35,7 @@ $(document).ready(function() {
   $('div#main').click(function() {
     $('div#menu').removeClass('open');
     $('div#menu').animate({
-      top: -1140
+      top: -1190
     });
   });
 
