@@ -1084,8 +1084,8 @@ body {
   top: 0;
   display: inline-block;
   float: right;
-  width: 120px;
-  height: 120px;
+  width: 150px;
+  height: 150px;
   padding: 10px;
   border-radius: 70px;
   background: white;
@@ -1102,10 +1102,10 @@ body {
   .log-cache-slider .btn {
     position: relative;
     float: left;
-    width: 100px;
-    height: 100px;
+    width: 130px;
+    height: 130px;
     border-radius: 50%;
-    padding-top: 30px;
+    padding-top: 40px;
     text-align: center;
     border: 2px solid white;
     box-shadow: 0 0 5px rgba(0, 0, 0, 0.25);
@@ -1120,13 +1120,13 @@ body {
     z-index: 100; }
     .log-cache-slider .btn i[class^="icon"] {
       font-weight: bold;
-      font-size: 44px;
+      font-size: 60px;
       color: #85a6d0;
       text-shadow: 0 1px 1px rgba(255, 255, 255, 0.5); }
   .log-cache-slider h1.slide-label {
     color: white;
     position: absolute;
-    top: 12px;
+    top: 20px;
     left: 0px;
     opacity: 0;
     text-shadow: 0 1px 2px #85a6d0;
