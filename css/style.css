@@ -1150,7 +1150,7 @@ body {
   padding: 10px;
   box-shadow: 0 0 5px rgba(0, 0, 0, 0.25); }
   .user-post .user-name {
-    font-size: 18px;
+    font-size: 32px;
     margin-bottom: 0px;
     color: gray;
     text-transform: uppercase;
@@ -1161,9 +1161,11 @@ body {
     right: 0;
     color: gray;
     margin-right: 10px; }
+    .user-post .post-date p {
+      margin: 0 !important;
+      font-size: 20pt !important; }
   .user-post p {
-    font-size: 14px;
-    margin: 5px 0; }
+    font-size: 14px; }
   .user-post.found {
     border-left: 5px solid #88af33; }
 
@@ -1276,26 +1278,27 @@ body {
     margin: 0;
     font-style: normal; }
   .log .cache-adv-log .cache-name .date {
-    font-size: 14px;
+    font-size: 24px;
     color: gray;
     float: right; }
   .log .cache-adv-log .cache-name .icon-cache {
     display: inline-block;
-    height: 12px;
-    width: 18px;
+    height: 24px;
+    width: 36px;
+    margin-right: 10px;
     background-repeat: no-repeat; }
     .log .cache-adv-log .cache-name .icon-cache.green {
       background: url("../images/cache_green.png") !important;
       background-size: 100% !important; }
   .log .cache-adv-log .cache-name .icon-star, .log .cache-adv-log .cache-name .icon-star-empty {
     color: #fcbf40;
-    font-size: 10pt; }
+    font-size: 22pt; }
 .log .cache-adv-log .cache-map {
   position: relative;
   background: white;
   box-shadow: 0 2px 2px rgba(0, 0, 0, 0.25);
-  height: 200px;
-  padding: 10px;
+  height: 400px;
+  padding: 20px;
   z-index: 75;
   overflow: hidden;
   -webkit-transition: all 0.3s; }
@@ -1314,18 +1317,19 @@ body {
   background: white;
   box-shadow: 0 2px 2px rgba(0, 0, 0, 0.25);
   z-index: 50;
-  padding: 25px 10px 0px;
+  padding: 50px 20px 0px;
   overflow: hidden;
   -webkit-transition: all 0.3s; }
   .log .cache-adv-log .cache-description p {
     position: relative;
-    margin: 5px 0;
+    margin: 10px 0;
     opacity: 1;
+    font-size: 24pt;
     -webkit-transition: all 0.6s;
     -webkit-transition-delay: 0.3s; }
   .log .cache-adv-log .cache-description .user-post {
     position: relative;
-    margin: 25px 0;
+    margin: 50px 0;
     opacity: 1;
     -webkit-transition: all 0.6s;
     -webkit-transition-delay: 0.4s; }
