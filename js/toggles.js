@@ -22,9 +22,9 @@ $(document).ready(function() {
     $('div#menu').toggleClass('open');
   });
 
-  // $('div.menu-slider').click(function() {
-  //   $('div#menu').toggleClass('open');
-  // });
+  $('div.menu-slider').click(function() {
+    $('div#menu').toggleClass('open');
+  });
 
   // if ("div#menu.open") {
   //   $('#main').click(function() {
@@ -35,7 +35,7 @@ $(document).ready(function() {
   $('div#main').click(function() {
     $('div#menu').removeClass('open');
     $('div#menu').animate({
-      top: -1160
+      top: -1140
     });
   });
 

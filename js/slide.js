@@ -21,26 +21,26 @@ $(function() {
 });
 
 
-$(function() {
-	var u = -800
+// $(function() {
+// 	var u = -800
 
-	$("div#menu").draggable({
-		axis: 'y',
-		//containment: 'body',
-		drag: function(event, ui) {
-			if (ui.position.top > u ) {
-				$("div#menu").addClass('open');
-				$(this).animate({
-					top: 0
-				});
-			}
-		},
-		stop: function(event, ui) {
-			if (ui.position.top < u + 1) {
-				$(this).animate({
-					top: -1160
-				});
-			}
-		}
-	});
-});
+// 	$("div#menu").draggable({
+// 		axis: 'y',
+// 		//containment: 'body',
+// 		drag: function(event, ui) {
+// 			if (ui.position.top > u ) {
+// 				$("div#menu").addClass('open');
+// 				$(this).animate({
+// 					top: 0
+// 				});
+// 			}
+// 		},
+// 		stop: function(event, ui) {
+// 			if (ui.position.top < u + 1) {
+// 				$(this).animate({
+// 					top: -1160
+// 				});
+// 			}
+// 		}
+// 	});
+// });
