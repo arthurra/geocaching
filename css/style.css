@@ -403,11 +403,11 @@ body {
     float: left;
     width: 100%; }
     .cache-header .cache-info h3 {
-      margin-bottom: 10px;
+      margin-bottom: 20px;
       font-style: normal; }
     .cache-header .cache-info .cache-type {
       display: inline-block;
-      margin-right: 5px; }
+      margin-right: 10px; }
     .cache-header .cache-info .difficulty {
       display: inline-block;
       margin-right: 20px; }
@@ -897,62 +897,68 @@ body {
   width: 100%;
   background: white;
   box-shadow: 0 2px 2px rgba(0, 0, 0, 0.25);
-  padding: 10px; }
+  padding: 20px; }
   .cache-data .map {
     width: 50%;
-    height: 150px;
+    height: 300px;
     display: inline-block;
     background: url("../images/cache_info_map.png");
     background-size: 150% 100%; }
   .cache-data .specs {
     display: inline-block;
-    padding-left: 5px;
+    padding-left: 10px;
     width: 48%;
     float: right; }
     .cache-data .specs .date {
       text-align: right;
       color: gray;
-      margin-bottom: 15px; }
+      margin-bottom: 30px; }
     .cache-data .specs .cache-type, .cache-data .specs .findabiliy, .cache-data .specs .distance {
-      margin-bottom: 10px; }
+      margin-bottom: 20px; }
     .cache-data .specs i[class*="star"] {
-      color: #fcbf40; }
+      color: #fcbf40;
+      font-size: 24pt; }
+    .cache-data .specs .cache-type {
+      font-size: 24pt; }
     .cache-data .specs .icon-cache {
       display: inline-block;
-      height: 12px;
-      width: 18px;
+      height: 24px;
+      width: 36px;
       background-repeat: no-repeat; }
       .cache-data .specs .icon-cache.green {
         background: url("../images/cache_green.png") !important;
         background-size: 100% !important; }
     .cache-data .specs .distance .icon-direction {
       display: inline-block;
-      margin-right: 10px;
-      height: 12px;
-      width: 10px;
+      margin-right: 15px !important;
+      height: 24px;
+      width: 20px;
       margin-right: 10px;
       background: url("../images/distance.png") !important;
       background-size: 100% !important;
       background-repeat: no-repeat; }
     .cache-data .specs .distance h2 {
-      display: inline-block; }
+      display: inline-block;
+      font-size: 24pt; }
     .cache-data .specs .findabiliy .icon-screenshot {
       margin-right: 8px;
-      width: 18px;
+      font-size: 36px;
       color: #84a7d0; }
     .cache-data .specs .terrain .icon-terrain {
       display: inline-block;
-      height: 12px;
-      width: 18px;
+      height: 24px;
+      width: 36px;
       margin-right: 5px;
       background: url("../images/terrain.png") !important;
       background-size: 100%;
       background-repeat: no-repeat; }
   .cache-data .description {
-    margin: 35px 0; }
+    margin: 70px 0; }
+    .cache-data .description p {
+      font-size: 24pt; }
   .cache-data .save-cache-btn, .cache-data .goto-cache-btn {
     width: 48%;
-    height: 55px;
+    height: 110px;
     display: inline-block;
     background: grey;
     text-align: center; }
@@ -960,7 +966,7 @@ body {
       font-weight: bold; }
   .cache-data .save-cache-btn {
     margin-right: 2%;
-    padding: 15px 0;
+    padding: 30px 0;
     border: 1px solid #88af33;
     background: #e2edce;
     background: -moz-linear-gradient(top, #e2edce 0%, #cee1ae 100%);
@@ -972,14 +978,14 @@ body {
     filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#e2edce', endColorstr='#cee1ae',GradientType=0 ); }
     .cache-data .save-cache-btn h4 {
       color: #88af33;
-      font-size: 18px;
+      font-size: 36px;
       font-weight: bold;
       text-transform: uppercase;
       margin: 0;
       text-shadow: 0 1px 1px rgba(255, 255, 255, 0.75); }
   .cache-data .goto-cache-btn {
     color: #e6e7e8;
-    padding: 15px 0;
+    padding: 30px 0;
     border: 1px solid black;
     background: #6e6f72;
     background: -moz-linear-gradient(top, #6e6f72 1%, #424344 100%);
@@ -991,7 +997,7 @@ body {
     filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#6e6f72', endColorstr='#424344',GradientType=0 ); }
     .cache-data .goto-cache-btn h4 {
       color: lightgrey;
-      font-size: 18px;
+      font-size: 36px;
       font-weight: bold;
       text-transform: uppercase;
       margin: 0;
@@ -1051,7 +1057,8 @@ body {
       top: 10px; }
       .cache-log header .cache-stats .found, .cache-log header .cache-stats .not-found, .cache-log header .cache-stats .maintenance {
         float: left;
-        padding: 5px; }
+        padding: 5px;
+        margin-right: 15px; }
         .cache-log header .cache-stats .found h2, .cache-log header .cache-stats .not-found h2, .cache-log header .cache-stats .maintenance h2 {
           display: inline-block; }
       .cache-log header .cache-stats div[class^="icon"] {
@@ -1059,21 +1066,21 @@ body {
         height: 10px;
         border-radius: 50%;
         display: inline-block;
-        margin: 2px 2px 0 0; }
+        margin: 2px 5px 0 0; }
       .cache-log header .cache-stats .icon-ok-sign {
-        font-size: 12px;
+        font-size: 36px;
         color: #88af33;
         position: relative;
-        top: -1px; }
+        top: -5px; }
       .cache-log header .cache-stats .icon-remove-sign {
-        font-size: 12px;
+        font-size: 36px;
         color: red;
         position: relative;
-        top: -1px; }
+        top: -5px; }
       .cache-log header .cache-stats .icon-wrench {
-        font-size: 12px;
+        font-size: 36px;
         position: relative;
-        top: -1px;
+        top: -5px;
         color: orange; }
 
 .log-cache-slider {
@@ -1164,7 +1171,7 @@ body {
       margin: 0 !important;
       font-size: 20pt !important; }
   .user-post p {
-    font-size: 14px; }
+    font-size: 24pt; }
   .user-post.found {
     border-left: 5px solid #88af33; }
 
