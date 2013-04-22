@@ -1132,9 +1132,9 @@ body {
     margin: auto; }
     .log-cache-slider.slide .btn {
       box-shadow: 0 0 5px 2px rgba(0, 0, 0, 0.1); }
-    .log-cache-slider.slide h1 {
+    .log-cache-slider.slide h1.slide-label {
       opacity: 1;
-      left: 175px; }
+      left: 160px; }
 
 .user-post {
   position: relative;
