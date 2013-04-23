@@ -1,5 +1,17 @@
 $(document).ready(function() {
 
+  $('div.photo').click(function(){
+    alert("Not available in demo mode.");
+  });
+
+  $('div.text').click(function(){
+    alert("Not available in demo mode.");
+  });
+
+  $('div.video').click(function(){
+    alert("Not available in demo mode.");
+  });
+
   $('div.mini-map').click(function(){
     $('div.content-container').toggleClass('hidden');
   });
