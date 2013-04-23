@@ -363,7 +363,7 @@ body {
   top: 15px;
   text-align: center;
   padding: 5px 0;
-  margin-bottom: 30px;
+  margin-bottom: 50px;
   background: white;
   z-index: 1000;
   -webkit-transition: all 0.5s;
@@ -592,7 +592,7 @@ body {
 /*           MINI MAP            */
 /*------------------------------- */
 .mini-map {
-  height: 450px;
+  height: 375px;
   width: 100%;
   background-image: url(../images/mini_map.png);
   background-position: center center;
