@@ -578,9 +578,9 @@ body {
     background-size: 100%;
     background-repeat: no-repeat; }
   .more-info.closed {
-    height: 50px; }
+    height: 75px; }
     .more-info.closed > div, .more-info.closed .exit-nav-btn {
-      top: -575px;
+      top: -560px;
       opacity: 0; }
     .more-info.closed .difficulty, .more-info.closed .distance {
       opacity: 1 !important; }
