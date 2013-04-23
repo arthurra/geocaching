@@ -1125,7 +1125,6 @@ body {
     filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#cddcec', endColorstr='#84a7d0',GradientType=0 );
     z-index: 100; }
     .log-cache-slider .btn i[class^="icon"] {
-      font-weight: bold;
       font-size: 60px;
       color: white;
       text-shadow: 0 1px 5px rgba(0, 0, 0, 0.15); }
