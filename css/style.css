@@ -463,9 +463,9 @@ body {
     display: block;
     position: absolute;
     right: 50px;
-    bottom: -48px;
-    width: 220px;
-    height: 72px;
+    bottom: -36px;
+    width: 165px;
+    height: 54px;
     background: url("../images/tab.png");
     background-size: 100%;
     background-repeat: no-repeat; }
