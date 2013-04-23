@@ -608,9 +608,9 @@ body {
   width: 750px;
   height: 750px;
   border-radius: 50%;
-  border: 10px solid white;
+  border: 20px solid white;
   background: transparent;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.15), 0 0 5px rgba(0, 0, 0, 0.1) inset; }
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.15), 0 0 10px rgba(0, 0, 0, 0.1) inset; }
 
 .pulse1 {
   -webkit-animation: pulse 5s cubic-bezier(0.1, 0.1, 0.25, 0.9) 0s infinite; }
@@ -632,7 +632,7 @@ body {
   background: -ms-linear-gradient(top, #d8d8d8 0%, white 100%);
   background: linear-gradient(to bottom, #d8d8d8 0%, white 100%);
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#d8d8d8', endColorstr='#ffffff',GradientType=0 );
-  box-shadow: 2px -10px 25px white, 0 5px 5px rgba(0, 0, 0, 0.15) inset; }
+  box-shadow: 4px -20px 50px white, 0 10px 100px rgba(0, 0, 0, 0.15) inset; }
   .menu-container .dividers {
     position: relative;
     overflow: hidden;
@@ -644,10 +644,10 @@ body {
       border-spacing: 0;
       -webkit-transform: rotate(45deg); }
       .menu-container .dividers table tr td {
-        border-bottom: 1px solid rgba(0, 0, 0, 0.1);
-        border-left: 1px solid white;
-        border-right: 1px solid rgba(0, 0, 0, 0.1);
-        border-top: 1px solid white;
+        border-bottom: 2px solid rgba(0, 0, 0, 0.1);
+        border-left: 2px solid white;
+        border-right: 2px solid rgba(0, 0, 0, 0.1);
+        border-top: 2px solid white;
         padding: 0;
         width: 50%;
         height: 50%;
@@ -667,11 +667,11 @@ body {
             font-size: 60px;
             display: block;
             color: #58595b;
-            text-shadow: 0 1px 50px white, 0 1px 50px white, 0 1px 0 rgba(255, 255, 255, 0.75); }
+            text-shadow: 0 2px 100px white, 0 2px 100px white, 0 2px 0 rgba(255, 255, 255, 0.75); }
           .menu-container .dividers table tr td .sub-btn h2 {
             margin-top: 30px;
             color: #58595b;
-            text-shadow: 0 1px 50px white, 0 1px 0 white; }
+            text-shadow: 0 2px 100px white, 0 2px 0 white; }
           .menu-container .dividers table tr td .sub-btn.photo {
             top: 25px;
             left: 25px; }
@@ -721,7 +721,7 @@ body {
       left: 7%;
       border-radius: 50%;
       background: #f5f4f2;
-      box-shadow: 0 0 5px rgba(0, 0, 0, 0.15) inset; }
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.15) inset; }
     .menu-container .back .back-btn {
       width: 74%;
       height: 74%;
@@ -736,7 +736,7 @@ body {
       background: -ms-linear-gradient(top, #cddcec 0%, #84a7d0 100%);
       background: linear-gradient(to bottom, #cddcec 0%, #84a7d0 100%);
       filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#cddcec', endColorstr='#84a7d0',GradientType=0 );
-      box-shadow: 0 1px 3px rgba(0, 0, 0, 0.4);
+      box-shadow: 0 2px 6px rgba(0, 0, 0, 0.4);
       border-radius: 50%;
       text-align: center; }
       .menu-container .back .back-btn i[class^="icon"] {
@@ -744,7 +744,7 @@ body {
         top: 37px;
         color: white;
         font-size: 60px;
-        text-shadow: 0 1px 5px rgba(0, 0, 0, 0.15); }
+        text-shadow: 0 2px 10px rgba(0, 0, 0, 0.15); }
 
 .compass-container {
   position: absolute;
@@ -753,7 +753,7 @@ body {
   height: 685px;
   width: 685px;
   border-radius: 50%;
-  border: 6px solid white;
+  border: 12px solid white;
   background: #e5e5e5;
   background: -moz-linear-gradient(top, #e5e5e5 0%, #f2f2f2 100%);
   background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #e5e5e5), color-stop(100%, #f2f2f2));
@@ -762,7 +762,7 @@ body {
   background: -ms-linear-gradient(top, #e5e5e5 0%, #f2f2f2 100%);
   background: linear-gradient(to bottom, #e5e5e5 0%, #f2f2f2 100%);
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#e5e5e5', endColorstr='#f2f2f2',GradientType=0 );
-  box-shadow: 0 9px 15px rgba(0, 0, 0, 0.25), 0 8px 10px rgba(0, 0, 0, 0.1) inset;
+  box-shadow: 0 18px 30px rgba(0, 0, 0, 0.25), 0 16px 20px rgba(0, 0, 0, 0.1) inset;
   -webkit-transform-origin: 17% 83%;
   -webkit-transition: all 0.4s; }
   .compass-container.open {
@@ -796,7 +796,7 @@ body {
     width: 160px;
     height: 160px;
     border-radius: 50%;
-    border: 2px solid white;
+    border: 4px solid white;
     background: #cddcec;
     background: -moz-linear-gradient(top, #cddcec 0%, #84a7d0 100%);
     background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #cddcec), color-stop(100%, #84a7d0));
@@ -805,7 +805,7 @@ body {
     background: -ms-linear-gradient(top, #cddcec 0%, #84a7d0 100%);
     background: linear-gradient(to bottom, #cddcec 0%, #84a7d0 100%);
     filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#cddcec', endColorstr='#84a7d0',GradientType=0 );
-    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.25); }
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.25); }
     .compass-container .new-post-btn .icon-new-post {
       position: relative;
       top: 37px;
