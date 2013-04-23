@@ -286,7 +286,7 @@ h5 {
     width: 0;
     height: 0;
     border: 20px solid;
-    border-color: #d8e7be transparent transparent transparent; }
+    border-color: white transparent transparent transparent; }
   .menu-slider .groove {
     display: block;
     top: 0;
@@ -294,18 +294,19 @@ h5 {
     width: 6em;
     height: 40px;
     border-radius: 20px;
+    background: white;
     text-align: center;
     z-index: 1100000;
     box-shadow: 0 1px 1px rgba(0, 0, 0, 0.25) inset, 0 1px 1px white; }
   .menu-slider h3 {
+    font-weight: normal;
     position: relative;
     top: 15px;
     line-height: 0;
     margin: 0;
-    color: white;
+    color: #88af33;
     font-size: 60px;
     letter-spacing: 6px;
-    text-shadow: 0 1px 1px rgba(0, 0, 0, 0.2);
     z-index: 5000000; }
 
 /*------------------------------- */
@@ -1214,6 +1215,7 @@ body {
   padding-right: 0 !important;
   margin: 25px 0;
   background: white;
+  overflow: hidden;
   box-shadow: 0 2px 2px rgba(0, 0, 0, 0.25);
   -webkit-transition: top 0.3s; }
   .search:after {
@@ -1263,8 +1265,8 @@ body {
 /*------------------------------- */
 .log .timeline {
   position: relative;
-  height: 35px;
-  width: 5px;
+  height: 70px;
+  width: 10px;
   margin: 0 auto;
   background: #88af33;
   opacity: 0.75; }
@@ -1272,8 +1274,8 @@ body {
     margin: auto !important; }
 .log .today, .log .start {
   background: #88af33;
-  width: 11px;
-  height: 11px;
+  width: 22px;
+  height: 22px;
   border-radius: 50%;
   opacity: 0.75; }
 .log .today {

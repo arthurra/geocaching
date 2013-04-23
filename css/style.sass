@@ -346,7 +346,7 @@ h5
     width: 0
     height: 0
     border: 20px solid
-    border-color: $light-green transparent transparent transparent
+    border-color: #fff transparent transparent transparent
   .groove
     display: block
     //position: absolute
@@ -355,19 +355,20 @@ h5
     width: 6em
     height: 40px
     border-radius: 20px
-    //background: black
+    background: #fff
     text-align: center
     z-index: 1100000
     box-shadow: 0 1px 1px rgba(0,0,0,0.25) inset, 0 1px 1px #fff
   h3
+    font-weight: normal
     position: relative
     top: 15px
     line-height: 0
     margin: 0
-    color: #fff
+    color: $green
     font-size: 60px
     letter-spacing: 6px
-    text-shadow: 0 1px 1px rgba(0,0,0,0.2)
+    //text-shadow: 0 1px 1px rgba(0,0,0,0.2)
     z-index: 5000000
 
 
@@ -1330,6 +1331,7 @@ body
   padding-right: 0 !important
   margin: 25px 0
   background: #fff
+  overflow: hidden
   box-shadow: 0 2px 2px rgba(0, 0, 0, 0.25)
   -webkit-transition: top 0.3s
   .search-btn
@@ -1376,8 +1378,8 @@ body
 .log
   .timeline
     position: relative
-    height: 35px
-    width: 5px
+    height: 70px
+    width: 10px
     margin: 0 auto 
     background: $green
     opacity: 0.75
@@ -1385,8 +1387,8 @@ body
       margin: auto !important
   .today, .start
     background: $green
-    width: 11px
-    height: 11px
+    width: 22px
+    height: 22px
     border-radius: 50%
     opacity: 0.75
   .today
