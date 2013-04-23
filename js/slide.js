@@ -1,13 +1,19 @@
 $(function() {
 	var w = $("div.btn").width();
-	var u = w * 5.5;
+	var u = w * 6;
 
 	$("div.btn").draggable({
 		axis: 'x',
 		containment: 'parent',
 		drag: function(event, ui) {
 			if (ui.position.left > u) {
-				$("body").fadeOut();
+				alert("Not available in demo mode.");
+				$(this).animate({
+					left: 0
+				});
+				$('div.log-cache-slider').toggleClass('slide');
+		    $('div.cache-log header > h5').toggleClass('slide-hidden');
+		    $('div.cache-log header > h1').toggleClass('slide-hidden');
 			}
 		},
 		stop: function(event, ui) {
