@@ -820,6 +820,10 @@ body {
 /*------------------------------- */
 /*         NEARBY CACHES         */
 /*------------------------------- */
+.nearby-map {
+  width: 100%;
+  height: 100%; }
+
 .nearby-cache {
   position: absolute;
   top: 250px;
