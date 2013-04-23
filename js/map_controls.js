@@ -2,7 +2,7 @@ var map;
 
 function initialize() {
   var mapOptions = {
-    zoom: 15,
+    zoom: 30,
     disableDefaultUI: true,
     mapTypeId: google.maps.MapTypeId.ROADMAP
   };
@@ -51,17 +51,17 @@ function initialize() {
       //   map: map
       // });
 
-      var markerStart = new google.maps.Marker({
-        position: pos,
-        icon: startMarker,
-        map: map
-      });
+      // var markerStart = new google.maps.Marker({
+      //   position: pos,
+      //   icon: startMarker,
+      //   map: map
+      // });
 
-      var markerStartHalo = new google.maps.Marker({
-        position: pos,
-        icon: startMarkerHalo,
-        map: map
-      });
+      // var markerStartHalo = new google.maps.Marker({
+      //   position: pos,
+      //   icon: startMarkerHalo,
+      //   map: map
+      // });
 
       map.setCenter(pos);
     }, function() {
