@@ -81,5 +81,9 @@ $(document).ready(function() {
   $('div.nearby-cache').click(function() {
     $(this).toggleClass('active');
   });
+
+  $('div.back-to-nav .icon-map-marker').click(function() {
+    $('div.back-to-nav').toggleClass('open');
+  });
   
 });
